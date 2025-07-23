@@ -1305,7 +1305,7 @@ const NoteStorage turret1Test[] = {
 };
 
 const NoteStorage turret2Test[] = {
-    { NOTE_C3, 1, VIBRATO_MED}  //whole note
+    // { NOTE_C3, 1, VIBRATO_MED}  //whole note
 };
 
 
