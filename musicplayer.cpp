@@ -7,7 +7,12 @@ using namespace std;
 #include <algorithm>
 #include <wiringPi.h>
 
+//vibrato frequencies can be changed
+#define VIB_SLOW_FREQ 0.5
+#define VIB_MED_FREQ 10
+#define VIB_FAST_FREQ 5
 
+#define VIBRATO_RANGE = 0.0293;  //no clue if this is a good vibrato range need to test
 
 
 
@@ -121,10 +126,7 @@ volatile unsigned long globalStepDelay1 = 1000;  // in microseconds
 const double BPMs = BPMtoMilisec / songBPM;
 const double WholeNoteMS = 4 * BPMtoMilisec / songBPM;
 
-//vibrato frequencies can be changed
-#define VIB_SLOW_FREQ 0.5
-#define VIB_MED_FREQ 10
-#define VIB_FAST_FREQ 5
+
 
 #define STACCATO 0x01      // 00000001
 #define VIBRATO_SLOW 0x02  // 00000010
@@ -1337,7 +1339,7 @@ public:
     //acceptable vibrato range falls under a quarter tone away from the note
     // a quarter tone has a ratio of 24 to sqrt 2 which is approx 1.0293 according to google
     //vibratoRange will be denoted as a percentage deviation above or below the base frequency
-    double vibratoRange = 0.5;  //no clue if this is a good vibrato range need to test
+
     float vibratoFrequency = 5;    //hz
     float staccatoRatio = 0.7;
 
@@ -1562,7 +1564,7 @@ public:
             //could add randomized phase shifts if vibrato sounds too samey
             float phaseShift = 0;
             //vibrato range is amplitude
-            float vibratoOffset = vibratoRange * sin(B * (elapsed + phaseShift));
+            float vibratoOffset = VIBRATO_RANGE * sin(B * (elapsed + phaseShift));
             float modulatedFreq = frequency + (vibratoOffset * frequency);
             //failsafe for divide by 0
             if (modulatedFreq <= 0) modulatedFreq = 1;
