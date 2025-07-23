@@ -1301,11 +1301,11 @@ const NoteStorage turret2Melody[] = {
 };
 
 const NoteStorage turret1Test[] = {
-    { NOTE_F3, 1, VIBRATO_MED},  //whole note
-    { NOTE_A4, 1, VIBRATO_FAST},  //whole note
-    { NOTE_B4, 1, VIBRATO_SLOW},  //whole note
-    { NOTE_C4, 1, GLISSANDO},  //whole note
-    { NOTE_D4, 1}  //whole note
+    { NOTE_DF4, 1, VIBRATO_MED},  //whole note
+    { NOTE_C4, 1, VIBRATO_FAST},  //whole note
+    { NOTE_BF4, 1, VIBRATO_SLOW},  //whole note
+    { NOTE_A4, 1, GLISSANDO},  //whole note
+    { NOTE_B4, 1}  //whole note
 };
 
 const NoteStorage turret2Test[] = {
