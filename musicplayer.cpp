@@ -12,7 +12,7 @@ using namespace std;
 #define VIB_MED_FREQ 10
 #define VIB_FAST_FREQ 5
 
-const double VIBRATO_RANGE 0.0293;  //no clue if this is a good vibrato range need to test
+const double vibratoRange 0.0293;  //no clue if this is a good vibrato range need to test
 
 
 
@@ -1564,7 +1564,7 @@ public:
             //could add randomized phase shifts if vibrato sounds too samey
             float phaseShift = 0;
             //vibrato range is amplitude
-            float vibratoOffset = VIBRATO_RANGE * sin(B * (elapsed + phaseShift));
+            float vibratoOffset = vibratoRange * sin(B * (elapsed + phaseShift));
             float modulatedFreq = frequency + (vibratoOffset * frequency);
             //failsafe for divide by 0
             if (modulatedFreq <= 0) modulatedFreq = 1;
