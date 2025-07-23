@@ -8,9 +8,9 @@ using namespace std;
 #include <wiringPi.h>
 
 //vibrato frequencies can be changed
-#define VIB_SLOW_FREQ 2
-#define VIB_MED_FREQ 5
-#define VIB_FAST_FREQ 10
+#define VIB_SLOW_FREQ 4
+#define VIB_MED_FREQ 8
+#define VIB_FAST_FREQ 12
 
 const double vibratoRange = 0.0293;  //no clue if this is a good vibrato range need to test
 
