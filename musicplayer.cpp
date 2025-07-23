@@ -12,7 +12,7 @@ using namespace std;
 #define VIB_MED_FREQ 10
 #define VIB_FAST_FREQ 5
 
-#define VIBRATO_RANGE = 0.0293;  //no clue if this is a good vibrato range need to test
+#define VIBRATO_RANGE 0.0293;  //no clue if this is a good vibrato range need to test
 
 
 
