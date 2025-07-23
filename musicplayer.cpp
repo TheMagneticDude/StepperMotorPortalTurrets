@@ -1649,8 +1649,8 @@ public:
         if (!suppressDirFlip) {
             dir = !dir;  // flip direction only if not glissing from previous note
         }
-        // digitalWrite(dirPin, dir ? HIGH : LOW);
-        digitalWrite(dirPin, HIGH);
+          digitalWrite(dirPin, dir ? HIGH : LOW);
+        //digitalWrite(dirPin, HIGH);
     }
 };
 
