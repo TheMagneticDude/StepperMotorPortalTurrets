@@ -1651,9 +1651,9 @@ public:
     }
 };
 
-NoteStorage* stepper1CurrSong = turret1Melody;
+const NoteStorage* stepper1CurrSong = turret1Melody;
 unsigned int stepper1CurrLength = sizeof(turret1Melody) / sizeof(NoteStorage);
-NoteStorage* stepper2CurrSong = turret2Melody;
+const NoteStorage* stepper2CurrSong = turret2Melody;
 unsigned int stepper2CurrLength = sizeof(turret2Melody) / sizeof(NoteStorage);
 
 /*
