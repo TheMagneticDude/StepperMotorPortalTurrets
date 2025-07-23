@@ -1337,7 +1337,7 @@ public:
     //acceptable vibrato range falls under a quarter tone away from the note
     // a quarter tone has a ratio of 24 to sqrt 2 which is approx 1.0293 according to google
     //vibratoRange will be denoted as a percentage deviation above or below the base frequency
-    double vibratoRange = 1;  //no clue if this is a good vibrato range need to test
+    double vibratoRange = 0.5;  //no clue if this is a good vibrato range need to test
     float vibratoFrequency = 5;    //hz
     float staccatoRatio = 0.7;
 
