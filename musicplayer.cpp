@@ -1574,7 +1574,7 @@ public:
             float phaseShift = 0;
             //vibrato range is amplitude
             float vibratoOffset = vibratoRange * sin(B * (elapsed + phaseShift));
-            float modulatedFreq = float modulatedFreq = frequency * (1.0 + vibratoOffset);
+            float modulatedFreq = frequency * (1.0 + vibratoOffset);
 
             //failsafe for divide by 0
             // if (modulatedFreq <= 0) modulatedFreq = 1;
