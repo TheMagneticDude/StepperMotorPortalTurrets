@@ -1371,6 +1371,7 @@ public:
 
     uint16_t glissTarget = 0.0;
     double glissStep = 0.0;  //how much the frequency needs to increase each millisecond to reach the glissando target
+    bool prevWasGliss = false;
 
     const float TRILL_FREQ_SEMITONE_RATIO = pow(2.0, 1.0 / 12.0);  // ~1.0595 (1 semitone)
     const float TRILL_ALT_INTERVAL = TRILL_FREQ_SEMITONE_RATIO;    // One semitone up
@@ -1512,7 +1513,11 @@ public:
                 vibratoMode = note.vibrato;
                 glissandoMode = note.glissando;
                 trillMode = note.trill;
-                startNote(note.n, note.len);
+                // Save glissando status for the NEXT note
+                bool suppressDirectionChange = prevWasGliss;
+                prevWasGliss = glissandoMode;
+
+                startNote(note.n, note.len, suppressDirectionChange);
             } else {
                 ended = true;
             }
@@ -1598,7 +1603,7 @@ public:
         }
     }
 
-    void startNote(int freq, double type) {
+    void startNote(int freq, double type, bool supressDirFlip = false) {
         unsigned long nowMs = millis();
         unsigned long nowUs = micros();
         frequency = freq;
@@ -1639,7 +1644,9 @@ public:
         stepState = false;
         isPlaying = true;
 
-        dir = !dir;  // flip direction each note
+        if (!suppressDirFlip) {
+            dir = !dir;  // flip direction only if not glissing from previous note
+        }
         digitalWrite(dirPin, dir ? HIGH : LOW);
     }
 };
