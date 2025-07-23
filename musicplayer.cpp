@@ -1603,7 +1603,7 @@ public:
         }
     }
 
-    void startNote(int freq, double type, bool supressDirFlip = false) {
+    void startNote(int freq, double type, bool suppressDirFlip = false) {
         unsigned long nowMs = millis();
         unsigned long nowUs = micros();
         frequency = freq;
