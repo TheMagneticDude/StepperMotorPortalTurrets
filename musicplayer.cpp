@@ -123,7 +123,7 @@ const double WholeNoteMS = 4 * BPMtoMilisec / songBPM;
 
 //vibrato frequencies can be changed
 #define VIB_SLOW_FREQ 0.5
-#define VIB_MED_FREQ 50
+#define VIB_MED_FREQ 10
 #define VIB_FAST_FREQ 5
 
 #define STACCATO 0x01      // 00000001
