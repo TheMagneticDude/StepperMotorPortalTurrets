@@ -1355,6 +1355,7 @@ public:
     uint16_t frequency = 0;
     bool isPlaying = false;
     bool stepState = false;
+    unsigned long lastVibratoUpdate;
 
 
     // Note* noteList;
@@ -1565,7 +1566,9 @@ public:
         }
 
 
-        else if (vibratoMode && frequency > 0 && !glissandoMode) {  //glissando cant have vibrato(the following note can though)
+        else if ((nowMs - lastVibratoUpdate >= 1000) && vibratoMode && frequency > 0 && !glissandoMode) {  //glissando cant have vibrato(the following note can though)
+            // float phaseShift = random(0, 6283) / 1000.0; // Random start
+
             float elapsed = (nowMs - noteStartTime) / 1000.0;
             //vibratoFrequency is the period
             //hertz is how many times in one second it cyclesa
@@ -1582,11 +1585,11 @@ public:
             if (modulatedFreq > 10000.0) modulatedFreq = 10000.0;
 
             stepDelay = 1000000L / modulatedFreq;
+            lastVibratoUpdate = nowMs();
             // Serial.println("VIBRATO MODE");
         }
 
-        const unsigned int MIN_STEP_DELAY = 60; // safe minimum for A4988
-        if (stepDelay < MIN_STEP_DELAY) stepDelay = MIN_STEP_DELAY;
+
 
 
 
