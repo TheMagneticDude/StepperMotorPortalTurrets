@@ -1585,7 +1585,7 @@ public:
             if (modulatedFreq > 10000.0) modulatedFreq = 10000.0;
 
             stepDelay = 1000000L / modulatedFreq;
-            lastVibratoUpdate = nowMs();
+            lastVibratoUpdate = nowMs;
             // Serial.println("VIBRATO MODE");
         }
 
