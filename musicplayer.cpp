@@ -7,6 +7,9 @@ using namespace std;
 #include <algorithm>
 #include <wiringPi.h>
 
+
+#define songBPM 58
+
 //vibrato frequencies can be changed
 #define VIB_SLOW_FREQ 4
 #define VIB_MED_FREQ 6
@@ -120,7 +123,7 @@ volatile unsigned long globalStepDelay1 = 1000;  // in microseconds
 #define NOTE_B5 988
 
 
-#define songBPM 100
+
 #define BPMtoMilisec 60000
 
 const double BPMs = BPMtoMilisec / songBPM;
