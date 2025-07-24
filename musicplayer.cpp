@@ -1582,7 +1582,7 @@ public:
             //failsafe for divide by 0
             // if (modulatedFreq <= 0) modulatedFreq = 1;
             if (modulatedFreq < 1.0) modulatedFreq = 1.0;
-            if (modulatedFreq > 10000.0) modulatedFreq = 10000.0;
+            // if (modulatedFreq > 10000.0) modulatedFreq = 10000.0;
 
             stepDelay = 1000000L / modulatedFreq;
             lastVibratoUpdate = nowMs;
