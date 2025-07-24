@@ -1322,7 +1322,9 @@ const NoteStorage turret2Test[] = {
     // { NOTE_G4, 2, DOTTED | VIBRATO_MED},  //whole note
     { NOTE_C4, 4},  //quarter note
     { NOTE_B4, 8, GLISSANDO},  //eighth note
+    { NOTE_E3, 16, VIBRATO_MED},  //dotted eighth note
     { NOTE_E3, 8, VIBRATO_MED | DOTTED},  //dotted eighth note
+    { NOTE_F3, 4, VIBRATO_MED},  //dotted eighth note
 };
 
 
