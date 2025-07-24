@@ -15,7 +15,9 @@ using namespace std;
 #define VIB_MED_FREQ 6
 #define VIB_FAST_FREQ 8
 
-const double vibratoRange = 0.0293;  //no clue if this is a good vibrato range need to test
+
+//0.0293 old
+const double vibratoRange = 0.015;  //no clue if this is a good vibrato range need to test
 
 
 
@@ -1312,7 +1314,7 @@ const NoteStorage turret1Test[] = {
 };
 
 const NoteStorage turret2Test[] = {
-    { NOTE_DF3, 4, VIBRATO_MED},  //quarter note
+    { NOTE_DF4, 4, VIBRATO_MED},  //quarter note
     { NOTE_G4, 2, VIBRATO_MED},  //half note
     { NOTE_FS4, 8, VIBRATO_MED},  //eighth note
     { NOTE_A4, 8, GLISSANDO},  //eighth note
