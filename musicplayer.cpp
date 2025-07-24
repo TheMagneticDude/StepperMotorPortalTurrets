@@ -827,7 +827,7 @@ const NoteStorage turret1Melody[]  = {
     { NOTE_G3, 8 },
 
     //measure 48
-    { NOTE_F3, 1,VIBRATO_MED}  //whole note
+    { NOTE_F3, 1,VIBRATO_SLOW}  //whole note
 };
 
 
@@ -1296,7 +1296,7 @@ const NoteStorage turret2Melody[] = {
 
     //-------------------
     //measure 48
-    { NOTE_C3, 1, VIBRATO_MED}  //whole note
+    { NOTE_C3, 1, VIBRATO_SLOW}  //whole note
 
 };
 
