@@ -1660,17 +1660,17 @@ public:
     }
 };
 
-const NoteStorage* stepper1CurrSong = turret1Melody;
-unsigned int stepper1CurrLength = sizeof(turret1Melody) / sizeof(NoteStorage);
-const NoteStorage* stepper2CurrSong = turret2Melody;
-unsigned int stepper2CurrLength = sizeof(turret2Melody) / sizeof(NoteStorage);
+// const NoteStorage* stepper1CurrSong = turret1Melody;
+// unsigned int stepper1CurrLength = sizeof(turret1Melody) / sizeof(NoteStorage);
+// const NoteStorage* stepper2CurrSong = turret2Melody;
+// unsigned int stepper2CurrLength = sizeof(turret2Melody) / sizeof(NoteStorage);
 
-/*
+
 const NoteStorage* stepper1CurrSong = turret1Test;
 unsigned int stepper1CurrLength = sizeof(turret1Test) / sizeof(NoteStorage);
 
 const NoteStorage* stepper2CurrSong = turret2Test;
-unsigned int stepper2CurrLength = sizeof(turret2Test) / sizeof(NoteStorage);*/
+unsigned int stepper2CurrLength = sizeof(turret2Test) / sizeof(NoteStorage);
 
 
 
