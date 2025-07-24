@@ -7,8 +7,9 @@ using namespace std;
 #include <algorithm>
 #include <wiringPi.h>
 
+//58 for time to say goodbye test
 
-#define songBPM 58
+#define songBPM 80
 
 //vibrato frequencies can be changed
 #define VIB_SLOW_FREQ 4
@@ -1314,11 +1315,11 @@ const NoteStorage turret1Test[] = {
 };
 
 const NoteStorage turret2Test[] = {
-    { NOTE_D4, 4},  //quarter note
-    { NOTE_G4, 2},  //half note
-    { NOTE_FS4, 8},  //eighth note
-    { NOTE_A4, 8},  //eighth note
-    { NOTE_G4, 2, DOTTED},  //whole note
+    { NOTE_D4, 4, VIBRATO_MED},  //quarter note
+    { NOTE_G4, 2, VIBRATO_MED},  //half note
+    { NOTE_FS4, 8, VIBRATO_MED},  //eighth note
+    { NOTE_A4, 8, VIBRATO_MED},  //eighth note
+    { NOTE_G4, 2, DOTTED | VIBRATO_MED},  //whole note
 };
 
 
@@ -1669,17 +1670,17 @@ public:
     }
 };
 
-// const NoteStorage* stepper1CurrSong = turret1Melody;
-// unsigned int stepper1CurrLength = sizeof(turret1Melody) / sizeof(NoteStorage);
-// const NoteStorage* stepper2CurrSong = turret2Melody;
-// unsigned int stepper2CurrLength = sizeof(turret2Melody) / sizeof(NoteStorage);
+const NoteStorage* stepper1CurrSong = turret1Melody;
+unsigned int stepper1CurrLength = sizeof(turret1Melody) / sizeof(NoteStorage);
+const NoteStorage* stepper2CurrSong = turret2Melody;
+unsigned int stepper2CurrLength = sizeof(turret2Melody) / sizeof(NoteStorage);
 
 
-const NoteStorage* stepper1CurrSong = turret1Test;
-unsigned int stepper1CurrLength = sizeof(turret1Test) / sizeof(NoteStorage);
-
-const NoteStorage* stepper2CurrSong = turret2Test;
-unsigned int stepper2CurrLength = sizeof(turret2Test) / sizeof(NoteStorage);
+// const NoteStorage* stepper1CurrSong = turret1Test;
+// unsigned int stepper1CurrLength = sizeof(turret1Test) / sizeof(NoteStorage);
+//
+// const NoteStorage* stepper2CurrSong = turret2Test;
+// unsigned int stepper2CurrLength = sizeof(turret2Test) / sizeof(NoteStorage);
 
 
 
