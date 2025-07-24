@@ -1553,7 +1553,8 @@ public:
             float elapsed = nowMs - noteStartTime;
             float t = elapsed / noteDuration;  // progress [0.0 - 1.0]
 
-            float easedT = sqrt(t);
+            //log function for easein
+            float easedT = log10f(1 + 9 * t);  // maps t ∈ [0,1] → easedT ∈ [0,1]
 
             // Clamp t between 0 and 1
             if (t < 0.0f) t = 0.0f;
@@ -1568,7 +1569,7 @@ public:
             // float glissFreq = (glissStep * elapsed) + frequency;  //y = mx + b form
 
             // Linear interpolation in pitch space
-            float currentPitch = pitchStart + sqrt(t) * (pitchEnd - pitchStart);
+            float currentPitch = pitchStart + easedT * (pitchEnd - pitchStart);
 
             // Convert back to frequency space
             float glissFreq = powf(2.0f, currentPitch);
