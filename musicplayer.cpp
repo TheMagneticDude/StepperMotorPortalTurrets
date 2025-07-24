@@ -8,8 +8,8 @@ using namespace std;
 #include <wiringPi.h>
 
 //58 for time to say goodbye test
-
-#define songBPM 80
+//80 for turret serenade
+double songBPM = 80//80 by default
 
 //vibrato frequencies can be changed
 #define VIB_SLOW_FREQ 4
@@ -130,7 +130,7 @@ volatile unsigned long globalStepDelay1 = 1000;  // in microseconds
 #define BPMtoMilisec 60000
 
 const double BPMs = BPMtoMilisec / songBPM;
-const double WholeNoteMS = 4 * BPMtoMilisec / songBPM;
+double WholeNoteMS = 4 * BPMtoMilisec / songBPM;
 
 
 
@@ -168,7 +168,7 @@ const NoteStorage turret1Melody[]  = {
     //turret 1___________________________________________________________________________________________
     //-------------------
     //measure 1
-    { NOTE_BF4, 8},  // Eighth note
+    { NOTE_BF4, 8, VIBRATO_FAST},  // Eighth note
 
     { NOTE_C4, 8, STACCATO },   // Eighth note
     { NOTE_DF4, 8, STACCATO },  // Eighth note
@@ -183,7 +183,7 @@ const NoteStorage turret1Melody[]  = {
 
     //-------------------
     //measure 2
-    { NOTE_BF4, 8},  // Eighth note
+    { NOTE_BF4, 8, VIBRATO_FAST},  // Eighth note
     // staccatoMode = STACCATO;
     { NOTE_C4, 8, STACCATO },   // Eighth note
     { NOTE_DF4, 8, STACCATO },  // Eighth note
@@ -1670,17 +1670,19 @@ public:
     }
 };
 
-const NoteStorage* stepper1CurrSong = turret1Melody;
-unsigned int stepper1CurrLength = sizeof(turret1Melody) / sizeof(NoteStorage);
-const NoteStorage* stepper2CurrSong = turret2Melody;
-unsigned int stepper2CurrLength = sizeof(turret2Melody) / sizeof(NoteStorage);
+// songBPM =80; //80 for turret serenade
+// const NoteStorage* stepper1CurrSong = turret1Melody;
+// unsigned int stepper1CurrLength = sizeof(turret1Melody) / sizeof(NoteStorage);
+// const NoteStorage* stepper2CurrSong = turret2Melody;
+// unsigned int stepper2CurrLength = sizeof(turret2Melody) / sizeof(NoteStorage);
 
 
-// const NoteStorage* stepper1CurrSong = turret1Test;
-// unsigned int stepper1CurrLength = sizeof(turret1Test) / sizeof(NoteStorage);
-//
-// const NoteStorage* stepper2CurrSong = turret2Test;
-// unsigned int stepper2CurrLength = sizeof(turret2Test) / sizeof(NoteStorage);
+songBPM = 58;
+const NoteStorage* stepper1CurrSong = turret1Test;
+unsigned int stepper1CurrLength = sizeof(turret1Test) / sizeof(NoteStorage);
+
+const NoteStorage* stepper2CurrSong = turret2Test;
+unsigned int stepper2CurrLength = sizeof(turret2Test) / sizeof(NoteStorage);
 
 
 
@@ -1692,6 +1694,7 @@ Music stepper2(dirPin2, stepPin2, stepper2CurrSong, stepper2CurrLength);
 
 
 void setup() {
+    WholeNoteMS = 4 * BPMtoMilisec / songBPM;
     stepper1.init();
     stepper2.init();
     // stepper3.init();
