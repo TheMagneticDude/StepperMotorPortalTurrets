@@ -1566,7 +1566,7 @@ public:
         }
 
 
-        else if ((nowMs - lastVibratoUpdate >= 1) && vibratoMode && frequency > 0 && !glissandoMode) {  //glissando cant have vibrato(the following note can though)
+        else if ((nowUs - lastVibratoUpdate >= 100) && vibratoMode && frequency > 0 && !glissandoMode) {  //glissando cant have vibrato(the following note can though)
             // float phaseShift = random(0, 6283) / 1000.0; // Random start
 
             float elapsed = (nowMs - noteStartTime) / 1000.0;
@@ -1585,7 +1585,7 @@ public:
             // if (modulatedFreq > 10000.0) modulatedFreq = 10000.0;
 
             stepDelay = 1000000L / modulatedFreq;
-            lastVibratoUpdate = nowMs;
+            lastVibratoUpdate = nowUs;
             // Serial.println("VIBRATO MODE");
         }
 
