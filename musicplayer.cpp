@@ -1551,8 +1551,25 @@ public:
 
         if (glissandoMode) {
             float elapsed = nowMs - noteStartTime;
+            float t = elapsed / noteDurationMs;  // progress [0.0 - 1.0]
+
+            // Clamp t between 0 and 1
+            if (t < 0.0f) t = 0.0f;
+            if (t > 1.0f) t = 1.0f;
+
+            // Convert to pitch space (log2 of frequency)
+            float pitchStart = log2f(frequency);
+            float pitchEnd = log2f(glissTarget);
+
+
             //use linear interpolation for now, maybe need to change later
-            float glissFreq = (glissStep * elapsed) + frequency;  //y = mx + b form
+            // float glissFreq = (glissStep * elapsed) + frequency;  //y = mx + b form
+
+            // Linear interpolation in pitch space
+            float currentPitch = pitchStart + t * (pitchEnd - pitchStart);
+
+            // Convert back to frequency space
+            float glissFreq = powf(2.0f, currentPitch);
 
             //constrain with the min being freq or glissTarget depending on which is lower and similar for max
             float freqF = static_cast<float>(frequency);
@@ -1710,7 +1727,7 @@ void loop() {
 
     if (stepper1.ended && stepper2.ended) {
         std::cout << "Song ended – pausing before restart..." << std::endl;
-        // usleep(10000 * 1000);
+        usleep(10000 * 1000);
 
         stepper1.restart();
         stepper2.restart();
