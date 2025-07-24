@@ -1566,7 +1566,7 @@ public:
         }
 
 
-        else if ((nowUs - lastVibratoUpdate >= 100) && vibratoMode && frequency > 0 && !glissandoMode) {  //glissando cant have vibrato(the following note can though)
+        else if (vibratoMode && frequency > 0 && !glissandoMode) {  //glissando cant have vibrato(the following note can though)
             // float phaseShift = random(0, 6283) / 1000.0; // Random start
 
             float elapsed = (nowMs - noteStartTime) / 1000.0;
