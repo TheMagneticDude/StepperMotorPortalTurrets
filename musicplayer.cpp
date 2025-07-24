@@ -168,7 +168,7 @@ const NoteStorage turret1Melody[]  = {
     //turret 1___________________________________________________________________________________________
     //-------------------
     //measure 1
-    { NOTE_BF4, 8, VIBRATO_FAST},  // Eighth note
+    { NOTE_BF4, 8},  // Eighth note
 
     { NOTE_C4, 8, STACCATO },   // Eighth note
     { NOTE_DF4, 8, STACCATO },  // Eighth note
@@ -183,7 +183,7 @@ const NoteStorage turret1Melody[]  = {
 
     //-------------------
     //measure 2
-    { NOTE_BF4, 8, VIBRATO_FAST},  // Eighth note
+    { NOTE_BF4, 8},  // Eighth note
     // staccatoMode = STACCATO;
     { NOTE_C4, 8, STACCATO },   // Eighth note
     { NOTE_DF4, 8, STACCATO },  // Eighth note
