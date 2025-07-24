@@ -1670,14 +1670,14 @@ public:
     }
 };
 
-// songBPM =80; //80 for turret serenade
+//BPM80 for turret serenade
 // const NoteStorage* stepper1CurrSong = turret1Melody;
 // unsigned int stepper1CurrLength = sizeof(turret1Melody) / sizeof(NoteStorage);
 // const NoteStorage* stepper2CurrSong = turret2Melody;
 // unsigned int stepper2CurrLength = sizeof(turret2Melody) / sizeof(NoteStorage);
 
 
-songBPM = 58;
+//BPM58 for turret serenade
 const NoteStorage* stepper1CurrSong = turret1Test;
 unsigned int stepper1CurrLength = sizeof(turret1Test) / sizeof(NoteStorage);
 
@@ -1694,6 +1694,7 @@ Music stepper2(dirPin2, stepPin2, stepper2CurrSong, stepper2CurrLength);
 
 
 void setup() {
+    songBPM = 58;
     WholeNoteMS = 4 * BPMtoMilisec / songBPM;
     stepper1.init();
     stepper2.init();
