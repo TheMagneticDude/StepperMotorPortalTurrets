@@ -1551,7 +1551,7 @@ public:
 
         if (glissandoMode) {
             float elapsed = nowMs - noteStartTime;
-            float t = elapsed / noteDurationMs;  // progress [0.0 - 1.0]
+            float t = elapsed / noteDuration;  // progress [0.0 - 1.0]
 
             // Clamp t between 0 and 1
             if (t < 0.0f) t = 0.0f;
