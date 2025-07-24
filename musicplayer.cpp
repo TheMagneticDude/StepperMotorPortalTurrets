@@ -1554,7 +1554,7 @@ public:
             float t = elapsed / noteDuration;  // progress [0.0 - 1.0]
 
             //log function for easein
-            float easedT = log10f(1 + 9 * t);  // maps t ∈ [0,1] → easedT ∈ [0,1]
+            float easedT = log10f(1 + 1 * t);  // maps t ∈ [0,1] → easedT ∈ [0,1]
 
             // Clamp t between 0 and 1
             if (t < 0.0f) t = 0.0f;
