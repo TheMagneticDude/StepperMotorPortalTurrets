@@ -44,6 +44,10 @@ volatile unsigned long globalStepDelay1 = 1000;  // in microseconds
 #define GRACE_NOTE_8TH 255
 #define GRACE_NOTE_16TH 254
 #define GRACE_NOTE_32ND 253
+#define TRIPLET_8TH   252
+#define TRIPLET_4TH   251
+#define TRIPLET_16TH  250
+#define TRIPLET_32ND  249
 
 
 #define REST 0
@@ -141,7 +145,7 @@ double WholeNoteMS = 4 * BPMtoMilisec / songBPM;
 #define DOTTED 0x10        // 00010000
 #define GLISSANDO 0x20     // 00100000
 #define TRILL 0x40         // 01000000
-#define UNUSED 0x80        // 10000000
+#define SLUR 0x80          // 10000000
 //POTENTIAL Vibrato encoding numbers using the three bits different combinations to represent different numbers and therefore more control over vibrato speed/intensity
 struct NoteStorage {
     uint16_t n;     //note frequency
@@ -157,7 +161,7 @@ struct NoteStorage {
     // 00010000 dotted note
     // 00100000 glissando
     // 01000000 trill
-    // 10000000
+    // 10000000 slur
 
     // Input && 0x01 = staccato on/off etc
 };
@@ -1315,16 +1319,27 @@ const NoteStorage turret1Test[] = {
 };
 
 const NoteStorage turret2Test[] = {
-    // { NOTE_D4, 4, VIBRATO_MED},  //quarter note
-    // { NOTE_G4, 2, VIBRATO_MED},  //half note
-    // { NOTE_FS4, 8, VIBRATO_MED},  //eighth note
-    // { NOTE_A4, 8, VIBRATO_MED | GLISSANDO},  //eighth note
-    // { NOTE_G4, 2, DOTTED | VIBRATO_MED},  //whole note
-    { NOTE_C4, 4},  //quarter note
-    { NOTE_B4, 8, GLISSANDO},  //eighth note
-    { NOTE_E3, 16, VIBRATO_MED},  //sixteenth note
-    { NOTE_E3, 8, VIBRATO_MED | DOTTED},  //dotted eighth note
-    { NOTE_FS3, 4, VIBRATO_MED},  //dotted eighth note
+    { NOTE_D3, 4, VIBRATO_MED},  //quarter note
+    { NOTE_G4, 2, VIBRATO_MED},  //half note
+    { NOTE_FS4, 8, VIBRATO_MED},  //eighth note
+    { NOTE_A4, 8, VIBRATO_MED | GLISSANDO},  //eighth note
+    { NOTE_G4, 2, DOTTED | VIBRATO_MED | SLUR},  //dotted half note
+    { NOTE_G4, 8, VIBRATO_MED},  //eighth note
+    { NOTE_A4, 8, VIBRATO_MED},  //eighth note
+    { NOTE_B4, 4, VIBRATO_MED},  //quarter note
+    { NOTE_B4, 2, VIBRATO_MED},  //half note
+    { NOTE_A4, TRIPLET_4TH, VIBRATO_MED},  //quarter triplet
+    { NOTE_C4, TRIPLET_4TH, VIBRATO_MED},  //quarter triplet
+    { NOTE_B4, TRIPLET_4TH, VIBRATO_MED},  //quarter triplet
+    { NOTE_G4, 4, DOTTED | VIBRATO_MED},  //dotted quarter note
+
+
+
+    // { NOTE_C4, 4},  //quarter note
+    // { NOTE_B4, 8, GLISSANDO},  //eighth note
+    // { NOTE_E3, 16, VIBRATO_MED},  //sixteenth note
+    // { NOTE_E3, 8, VIBRATO_MED | DOTTED},  //dotted eighth note
+    // { NOTE_FS3, 4, VIBRATO_MED},  //dotted eighth note
 };
 
 
@@ -1336,12 +1351,13 @@ public:
     bool vibrato;
     bool glissando;
     bool trill;
+    bool slur;
 
     Note()
     : n(0), len(0), staccato(false), vibrato(false), glissando(false), trill(true) {}
 
-    Note(int no, double length, bool s = false, bool v = false, bool c = false, bool t = false)
-    : n(no), len(length), staccato(s), vibrato(v), glissando(c), trill(t) {}
+    Note(int no, double length, bool s = false, bool v = false, bool c = false, bool t = false, bool sl = false)
+    : n(no), len(length), staccato(s), vibrato(v), glissando(c), trill(t), slur(t) {}
 };
 
 
@@ -1355,6 +1371,7 @@ public:
     bool vibratoMode = false;
     bool glissandoMode = false;
     bool trillMode = false;
+    bool slurMode = false;
     //acceptable vibrato range falls under a quarter tone away from the note
     // a quarter tone has a ratio of 24 to sqrt 2 which is approx 1.0293 according to google
     //vibratoRange will be denoted as a percentage deviation above or below the base frequency
@@ -1388,6 +1405,7 @@ public:
     uint16_t glissTarget = 0.0;
     double glissStep = 0.0;  //how much the frequency needs to increase each millisecond to reach the glissando target
     bool prevWasGliss = false;
+    bool prevWasSlur = false;
 
     const float TRILL_FREQ_SEMITONE_RATIO = pow(2.0, 1.0 / 12.0);  // ~1.0595 (1 semitone)
     const float TRILL_ALT_INTERVAL = TRILL_FREQ_SEMITONE_RATIO;    // One semitone up
@@ -1437,23 +1455,39 @@ public:
         int freq = ns.n;
 
         // Grace note check
-        if (ns.len >= 253) {  //grace note denoted by each GRACE_NOTE macro
-            graceNoteActive = true;
+        //special durations check
+        if (ns.len >= 249) {  //grace note denoted by each GRACE_NOTE macro
+
             switch (ns.len) {
+                 //early return, grace note shouldent be affected by STACCATO and VIBRATO or any other flag anyway
                 case GRACE_NOTE_8TH:
+                    graceNoteActive = true;
                     graceNoteDuration += 1.0 / 8.0;
+                    return Note(freq, graceNoteDuration);
                     break;
 
                 case GRACE_NOTE_16TH:
+                    graceNoteActive = true;
                     graceNoteDuration += 1.0 / 16.0;
+                    return Note(freq, graceNoteDuration);
                     break;
 
                 case GRACE_NOTE_32ND:
+                    graceNoteActive = true;
                     graceNoteDuration += 1.0 / 32.0;
+                    return Note(freq, graceNoteDuration);
                     break;
+                case TRIPLET_8TH:
+                    return Note(freq, (1.0 / 8.0) * (2.0 / 3.0));
+                case TRIPLET_4TH:
+                    return Note(freq, (1.0 / 4.0) * (2.0 / 3.0));
+                case TRIPLET_16TH:
+                    return Note(freq, (1.0 / 16.0) * (2.0 / 3.0));
+                case TRIPLET_32ND:
+                    return Note(freq, (1.0 / 32.0) * (2.0 / 3.0));
+
             }
-            //early return, grace note shouldent be affected by STACCATO and VIBRATO or any other flag anyway
-            return Note(freq, graceNoteDuration);
+            return Note(freq, graceNoteDuration);//default return
         }
 
 
@@ -1481,6 +1515,7 @@ public:
         bool vibrato = (ns.flags & VIBRATO_SLOW) || (ns.flags & VIBRATO_MED) || (ns.flags & VIBRATO_FAST);
         bool glissando = ns.flags & GLISSANDO;
         bool trill = ns.flags & TRILL;
+        bool slur = ns.flags & SLUR;
 
         if (ns.flags & GLISSANDO) {
             //if glissando is called read next note to get the glissando target
@@ -1508,7 +1543,7 @@ public:
 
 
 
-        return Note(freq, length, staccato, vibrato, glissando, trill);
+        return Note(freq, length, staccato, vibrato, glissando, trill, slur);
     }
 
 
@@ -1529,9 +1564,11 @@ public:
                 vibratoMode = note.vibrato;
                 glissandoMode = note.glissando;
                 trillMode = note.trill;
+                slurMode = note.slur;
                 // Save glissando status for the NEXT note
-                bool suppressDirectionChange = prevWasGliss;
+                bool suppressDirectionChange = prevWasGliss | prevWasSlur;
                 prevWasGliss = glissandoMode;
+                prevWasSlur = slurMode;
 
                 startNote(note.n, note.len, suppressDirectionChange);
             } else {
