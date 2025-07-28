@@ -1586,11 +1586,11 @@ public:
         if (nowMs >= noteEndTime) {  //exit if past end time
             if (!slurMode) {
                 // Normal: Stop note at its end
-                isPlaying = false;
                 digitalWrite(stepPin, LOW);
             }
             // else slurMode dotn stop motor
             // let it continue until the next note interrupts
+            isPlaying = false;
             return;
         }
 
