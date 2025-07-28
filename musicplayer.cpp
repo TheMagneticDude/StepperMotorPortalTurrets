@@ -1359,7 +1359,7 @@ public:
     : n(0), len(0), staccato(false), vibrato(false), glissando(false), trill(true) {}
 
     Note(int no, double length, bool s = false, bool v = false, bool c = false, bool t = false, bool sl = false)
-    : n(no), len(length), staccato(s), vibrato(v), glissando(c), trill(t), slur(t) {}
+    : n(no), len(length), staccato(s), vibrato(v), glissando(c), trill(t), slur(sl) {}
 };
 
 
