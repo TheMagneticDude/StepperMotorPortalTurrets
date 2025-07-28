@@ -48,7 +48,9 @@ volatile unsigned long globalStepDelay1 = 1000;  // in microseconds
 #define TRIPLET_4TH   251
 #define TRIPLET_16TH  250
 #define TRIPLET_32ND  249
-
+//1 beat (quarter note)	8th-note triplet
+// 2 beats (half note)	4th-note triplet
+// 0.5 beats (8th note)	16th-note triplet
 
 #define REST 0
 
@@ -1328,9 +1330,9 @@ const NoteStorage turret2Test[] = {
     { NOTE_A4, 8, VIBRATO_MED},  //eighth note
     { NOTE_B4, 4, VIBRATO_MED},  //quarter note
     { NOTE_B4, 2, VIBRATO_MED},  //half note
-    { NOTE_A4, TRIPLET_4TH, VIBRATO_MED},  //quarter triplet
-    { NOTE_C4, TRIPLET_4TH, VIBRATO_MED},  //quarter triplet
-    { NOTE_B4, TRIPLET_4TH, VIBRATO_MED},  //quarter triplet
+    { NOTE_A4, TRIPLET_8TH, VIBRATO_MED},  //quarter triplet
+    { NOTE_C4, TRIPLET_8TH, VIBRATO_MED},  //quarter triplet
+    { NOTE_B4, TRIPLET_8TH, VIBRATO_MED},  //quarter triplet
     { NOTE_G4, 4, DOTTED | VIBRATO_MED},  //dotted quarter note
 
 
