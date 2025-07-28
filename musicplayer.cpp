@@ -1341,7 +1341,7 @@ const NoteStorage turret2Test[] = {
 
     { NOTE_FS5, TRIPLET_8TH, VIBRATO_MED},  //quarter triplet
     { NOTE_D5, TRIPLET_8TH, VIBRATO_MED},  //quarter triplet
-    { NOTE_B5, TRIPLET_8TH, VIBRATO_MED},  //quarter triplet
+    { NOTE_B4, TRIPLET_8TH, VIBRATO_MED},  //quarter triplet
     { NOTE_D4, 2, VIBRATO_MED},  //half note
 
 
