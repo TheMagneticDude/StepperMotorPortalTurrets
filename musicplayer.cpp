@@ -1566,7 +1566,7 @@ public:
                 trillMode = note.trill;
                 slurMode = note.slur;
                 // Save glissando status for the NEXT note
-                bool suppressDirectionChange = prevWasGliss | prevWasSlur;
+                bool suppressDirectionChange = prevWasGliss || prevWasSlur;
                 prevWasGliss = glissandoMode;
                 prevWasSlur = slurMode;
 
