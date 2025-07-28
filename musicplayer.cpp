@@ -1321,7 +1321,7 @@ const NoteStorage turret1Test[] = {
 };
 
 const NoteStorage turret2Test[] = {
-    { NOTE_D3, 4, VIBRATO_MED},  //quarter note
+    { NOTE_D4, 4, VIBRATO_MED},  //quarter note
     { NOTE_G4, 2, VIBRATO_MED},  //half note
     { NOTE_FS4, 8, VIBRATO_MED},  //eighth note
     { NOTE_A4, 8, VIBRATO_MED | GLISSANDO},  //eighth note
@@ -1616,7 +1616,8 @@ public:
                 if (glideT > 1.0f) glideT = 1.0f;
 
                 //log function for easein
-                float easedT = log10f(1 + 1 * glideT);
+                // float easedT = log10f(1 + 1 * glideT);
+                float easedT = glideT * glideT;//quardatic ease function
 
                 // Convert to pitch space (log2 of frequency)
                 float pitchStart = log2f(frequency);
@@ -1630,7 +1631,7 @@ public:
                 float currentPitch = pitchStart + easedT * (pitchEnd - pitchStart);
 
                 // Convert back to frequency space
-                float glissFreq = powf(2.0f, currentPitch);
+                glissFreq = powf(2.0f, currentPitch);
 
                 //constrain with the min being freq or glissTarget depending on which is lower and similar for max
                 float freqF = static_cast<float>(frequency);
@@ -1721,15 +1722,15 @@ public:
             return;  //exit to not run rest of stepper code
         }
 
-        if (glissandoMode) {
-            //calculate the frequency step each millisecond needs to change to reach glissando target
-
-            if (fullDuration > 0) {
-                glissStep = (glissTarget - frequency) / (double)fullDuration;
-            } else {
-                glissStep = 0;
-            }
-        }
+//         if (glissandoMode) {
+//             //calculate the frequency step each millisecond needs to change to reach glissando target
+// /*
+//             if (fullDuration > 0) {
+//                 glissStep = (glissTarget - frequency) / (double)fullDuration;
+//             } else {
+//                 glissStep = 0;
+//             }*/
+//         }
 
         if (trillMode) {
             trillBaseFreq = frequency;
