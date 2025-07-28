@@ -1322,9 +1322,9 @@ const NoteStorage turret2Test[] = {
     // { NOTE_G4, 2, DOTTED | VIBRATO_MED},  //whole note
     { NOTE_C4, 4},  //quarter note
     { NOTE_B4, 8, GLISSANDO},  //eighth note
-    { NOTE_E3, 16, VIBRATO_MED},  //dotted eighth note
+    { NOTE_E3, 16, VIBRATO_MED},  //sixteenth note
     { NOTE_E3, 8, VIBRATO_MED | DOTTED},  //dotted eighth note
-    { NOTE_F3, 4, VIBRATO_MED},  //dotted eighth note
+    { NOTE_FS3, 4, VIBRATO_MED},  //dotted eighth note
 };
 
 
@@ -1558,36 +1558,52 @@ public:
             float elapsed = nowMs - noteStartTime;
             float t = elapsed / noteDuration;  // progress [0.0 - 1.0]
 
-            //log function for easein
-            float easedT = log10f(1 + 1 * t);  // maps t ∈ [0,1] → easedT ∈ [0,1]
+
 
             // Clamp t between 0 and 1
             if (t < 0.0f) t = 0.0f;
             if (t > 1.0f) t = 1.0f;
 
-            // Convert to pitch space (log2 of frequency)
-            float pitchStart = log2f(frequency);
-            float pitchEnd = log2f(glissTarget);
+            const float glissHoldRatio = 0.3;
+            float glissFreq;
+
+            if (t < glissHoldRatio) {
+                // Hold original pitch
+                glissFreq = frequency;
+            } else {
+
+                // Start gliding after hold
+                float glideT = (t - glissHoldRatio) / (1.0f - glissHoldRatio);
+                if (glideT > 1.0f) glideT = 1.0f;
+
+                //log function for easein
+                float easedT = log10f(1 + 1 * glideT);
+
+                // Convert to pitch space (log2 of frequency)
+                float pitchStart = log2f(frequency);
+                float pitchEnd = log2f(glissTarget);
 
 
-            //use linear interpolation for now, maybe need to change later
-            // float glissFreq = (glissStep * elapsed) + frequency;  //y = mx + b form
+                //use linear interpolation for now, maybe need to change later
+                // float glissFreq = (glissStep * elapsed) + frequency;  //y = mx + b form
 
-            // Linear interpolation in pitch space
-            float currentPitch = pitchStart + easedT * (pitchEnd - pitchStart);
+                // Linear interpolation in pitch space
+                float currentPitch = pitchStart + easedT * (pitchEnd - pitchStart);
 
-            // Convert back to frequency space
-            float glissFreq = powf(2.0f, currentPitch);
+                // Convert back to frequency space
+                float glissFreq = powf(2.0f, currentPitch);
 
-            //constrain with the min being freq or glissTarget depending on which is lower and similar for max
-            float freqF = static_cast<float>(frequency);
-            float targetF = static_cast<float>(glissTarget);
-            glissFreq = std::min(std::max(glissFreq, std::min(freqF, targetF)),
-                                 std::max(freqF, targetF));
+                //constrain with the min being freq or glissTarget depending on which is lower and similar for max
+                float freqF = static_cast<float>(frequency);
+                float targetF = static_cast<float>(glissTarget);
+                glissFreq = std::min(std::max(glissFreq, std::min(freqF, targetF)),
+                                    std::max(freqF, targetF));
+            }
 
             //failsafe for divide by 0
             if (glissFreq <= 0) glissFreq = 1;
             stepDelay = 1000000L / glissFreq;
+
         }
 
         else if (trillMode && !glissandoMode && frequency > 0) {
