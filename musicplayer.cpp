@@ -1333,7 +1333,16 @@ const NoteStorage turret2Test[] = {
     { NOTE_A4, TRIPLET_8TH, VIBRATO_MED},  //quarter triplet
     { NOTE_C4, TRIPLET_8TH, VIBRATO_MED},  //quarter triplet
     { NOTE_B4, TRIPLET_8TH, VIBRATO_MED},  //quarter triplet
-    { NOTE_G4, 4, DOTTED | VIBRATO_MED},  //dotted quarter note
+    { NOTE_G4, 4, DOTTED | VIBRATO_MED | GLISSANDO},  //dotted quarter note
+    { NOTE_G5, 8, VIBRATO_MED},  //eighth note
+    { NOTE_FS5, TRIPLET_8TH, VIBRATO_MED},  //quarter triplet
+    { NOTE_D5, TRIPLET_8TH, VIBRATO_MED},  //quarter triplet
+    { NOTE_G5, TRIPLET_8TH, VIBRATO_MED},  //quarter triplet
+
+    { NOTE_FS5, TRIPLET_8TH, VIBRATO_MED},  //quarter triplet
+    { NOTE_D5, TRIPLET_8TH, VIBRATO_MED},  //quarter triplet
+    { NOTE_B5, TRIPLET_8TH, VIBRATO_MED},  //quarter triplet
+    { NOTE_D4, 2, VIBRATO_MED},  //half note
 
 
 
