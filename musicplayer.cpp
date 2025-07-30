@@ -8,6 +8,8 @@ using namespace std;
 #include <wiringPi.h>
 
 
+#define BPMtoMilisec 60000
+
 //58 for time to say goodbye test
 //80 for turret serenade
 double songBPM = 80.0;//80 by default
@@ -21,7 +23,7 @@ void updateBPM() {
 
 updateBPM();
 
-#define BPMtoMilisec 60000
+
 
 
 
