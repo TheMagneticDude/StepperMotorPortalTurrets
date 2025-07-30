@@ -18,7 +18,7 @@ double WholeNoteMS = 4 * BPMtoMilisec / songBPM;
 void updateBPM() {
     WholeNoteMS = 4 * BPMtoMilisec / songBPM;
     BPMs = BPMtoMilisec / songBPM;
-}
+};
 
 
 updateBPM();
