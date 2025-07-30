@@ -7,9 +7,16 @@ using namespace std;
 #include <algorithm>
 #include <wiringPi.h>
 
+
+void updateBPM() {
+    WholeNoteMS = 4 * BPMtoMilisec / songBPM;
+    BPMs = BPMtoMilisec / songBPM;
+}
+
 //58 for time to say goodbye test
 //80 for turret serenade
 double songBPM = 80.0;//80 by default
+updateBPM();
 
 #define BPMtoMilisec 60000
 
@@ -1354,10 +1361,6 @@ const NoteStorage turret2Test[] = {
     // { NOTE_FS3, 4, VIBRATO_MED},  //dotted eighth note
 };
 
-void updateBPM() {
-    WholeNoteMS = 4 * BPMtoMilisec / songBPM;
-    BPMs = BPMtoMilisec / songBPM;
-}
 
 class Note {
 public:
@@ -1808,9 +1811,6 @@ void loop() {
     //for turret srenade  5 flats:  B♭, E♭, A♭, D♭, and G♭.
     stepper1.update();
     stepper2.update();
-
-    std::cout << "songBPM = " << songBPM << std::endl;
-    std::cout << "WholeNoteMS = " << WholeNoteMS << std::endl;
 
     if (stepper1.ended && stepper2.ended) {
         std::cout << "Song ended – pausing before restart..." << std::endl;
