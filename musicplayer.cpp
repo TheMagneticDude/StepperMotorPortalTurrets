@@ -1001,7 +1001,7 @@ const NoteStorage turret2Melody[] = {
     //-------------------
     //Measure 13
     { NOTE_BF4, 4, DOTTED | VIBRATO_MED},  //Dotted quarter note
-    { NOTE_A4, 8, VIBRATO MED},           //Eighth note
+    { NOTE_A4, 8, VIBRATO_MED},           //Eighth note
     { NOTE_GS4, 4, DOTTED | VIBRATO_MED},  //Dotted quarter note
     { NOTE_G4, 8, VIBRATO_MED},           //Eighth note
     //-------------------
