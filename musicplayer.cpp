@@ -8,20 +8,22 @@ using namespace std;
 #include <wiringPi.h>
 
 
+//58 for time to say goodbye test
+//80 for turret serenade
+double songBPM = 80.0;//80 by default
+double BPMs = BPMtoMilisec / songBPM;
+double WholeNoteMS = 4 * BPMtoMilisec / songBPM;
 void updateBPM() {
     WholeNoteMS = 4 * BPMtoMilisec / songBPM;
     BPMs = BPMtoMilisec / songBPM;
 }
 
-//58 for time to say goodbye test
-//80 for turret serenade
-double songBPM = 80.0;//80 by default
+
 updateBPM();
 
 #define BPMtoMilisec 60000
 
-double BPMs = BPMtoMilisec / songBPM;
-double WholeNoteMS = 4 * BPMtoMilisec / songBPM;
+
 
 //vibrato frequencies can be changed
 #define VIB_SLOW_FREQ 4
