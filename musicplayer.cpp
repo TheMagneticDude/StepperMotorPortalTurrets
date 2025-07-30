@@ -11,6 +11,11 @@ using namespace std;
 //80 for turret serenade
 double songBPM = 80.0;//80 by default
 
+#define BPMtoMilisec 60000
+
+double BPMs = BPMtoMilisec / songBPM;
+double WholeNoteMS = 4 * BPMtoMilisec / songBPM;
+
 //vibrato frequencies can be changed
 #define VIB_SLOW_FREQ 4
 #define VIB_MED_FREQ 6
@@ -133,10 +138,6 @@ volatile unsigned long globalStepDelay1 = 1000;  // in microseconds
 
 
 
-#define BPMtoMilisec 60000
-
-const double BPMs = BPMtoMilisec / songBPM;
-double WholeNoteMS = 4 * BPMtoMilisec / songBPM;
 
 
 
@@ -1353,6 +1354,10 @@ const NoteStorage turret2Test[] = {
     // { NOTE_FS3, 4, VIBRATO_MED},  //dotted eighth note
 };
 
+void updateBPM() {
+    WholeNoteMS = 4 * BPMtoMilisec / songBPM;
+    BPMs = BPMtoMilisec / songBPM;
+}
 
 class Note {
 public:
@@ -1790,7 +1795,8 @@ Music stepper2(dirPin2, stepPin2, stepper2CurrSong, stepper2CurrLength);
 
 void setup() {
     songBPM = 80;
-    WholeNoteMS = 4 * BPMtoMilisec / songBPM;
+    updateBPM();
+
     stepper1.init();
     stepper2.init();
     // stepper3.init();
@@ -1802,6 +1808,9 @@ void loop() {
     //for turret srenade  5 flats:  B♭, E♭, A♭, D♭, and G♭.
     stepper1.update();
     stepper2.update();
+
+    std::cout << "songBPM = " << songBPM << std::endl;
+    std::cout << "WholeNoteMS = " << WholeNoteMS << std::endl;
 
     if (stepper1.ended && stepper2.ended) {
         std::cout << "Song ended – pausing before restart..." << std::endl;
