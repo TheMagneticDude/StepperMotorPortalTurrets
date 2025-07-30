@@ -11,8 +11,8 @@ using namespace std;
 #define BPMtoMilisec 60000
 
 //58 for time to say goodbye test
-//80 for turret serenade
-double songBPM = 80.0;//80 by default
+//100 for turret serenade
+double songBPM = 100;//80 by default
 double BPMs = BPMtoMilisec / songBPM;
 double WholeNoteMS = 4 * BPMtoMilisec / songBPM;
 void updateBPM() {
@@ -1797,7 +1797,7 @@ Music stepper2(dirPin2, stepPin2, stepper2CurrSong, stepper2CurrLength);
 
 
 void setup() {
-    songBPM = 80;
+    songBPM = 100;
     updateBPM();
 
     stepper1.init();
