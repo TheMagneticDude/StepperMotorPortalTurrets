@@ -446,7 +446,7 @@ const NoteStorage turret1Melody[]  = {
 
     //-------------------
     //measure 19
-    { NOTE_A3, 8 },             // Eighth note
+    { NOTE_A3, 8, VIBRATO_FAST},// Eighth note
     { NOTE_BF3, 8, STACCATO },  // Eighth note
     { NOTE_C3, 8, STACCATO },   // Eighth note
     { NOTE_A3, 8, STACCATO },   // Eighth note
@@ -460,7 +460,7 @@ const NoteStorage turret1Melody[]  = {
 
     //-------------------
     //measure 20
-    { NOTE_A3, 8 },             // Eighth note
+    { NOTE_A3, 8, VIBRATO_FAST},             // Eighth note
     { NOTE_BF3, 8, STACCATO },  // Eighth note
     { NOTE_C3, 8, STACCATO },   // Eighth note
     { NOTE_A3, 8, STACCATO },   // Eighth note
@@ -474,7 +474,7 @@ const NoteStorage turret1Melody[]  = {
 
     //-------------------
     //measure 21
-    { NOTE_A3, 8 },             // Eighth note
+    { NOTE_A3, 8, VIBRATO_FAST},             // Eighth note
     { NOTE_BF3, 8, STACCATO },  // Eighth note
     { NOTE_C3, 8, STACCATO },   // Eighth note
     { NOTE_A3, 8, STACCATO },   // Eighth note
@@ -487,7 +487,7 @@ const NoteStorage turret1Melody[]  = {
     { NOTE_C3, 8, STACCATO },  // Eighth note
     //-------------------
     //measure 22
-    { NOTE_A3, 8 },             // Eighth note
+    { NOTE_A3, 8 ,VIBRATO_FAST},             // Eighth note
     { NOTE_BF3, 8, STACCATO },  // Eighth note
     { NOTE_C3, 8, STACCATO },   // Eighth note
     { NOTE_A3, 8, STACCATO },   // Eighth note
@@ -501,7 +501,7 @@ const NoteStorage turret1Melody[]  = {
 
     //-------------------
     //measure 23
-    { NOTE_BF3, 8 },  // Eighth note
+    { NOTE_BF3, 8 ,VIBRATO_FAST},  // Eighth note
 
     { NOTE_C3, 8, STACCATO },   // Eighth note
     { NOTE_DF3, 8, STACCATO },  // Eighth note
@@ -515,7 +515,7 @@ const NoteStorage turret1Melody[]  = {
     { NOTE_DF3, 8, STACCATO },  // Eighth note
     //-------------------
     //measure 24
-    { NOTE_A3, 8 },             // Eighth note
+    { NOTE_A3, 8 ,VIBRATO_FAST},             // Eighth note
     { NOTE_BF3, 8, STACCATO },  // Eighth note
     { NOTE_C3, 8, STACCATO },   // Eighth note
     { NOTE_A3, 8, STACCATO },   // Eighth note
@@ -529,7 +529,7 @@ const NoteStorage turret1Melody[]  = {
     //-------------------
     //measure 25 (change in rythm)
 
-    { NOTE_EF4, 8, STACCATO },  // Eighth note
+    { NOTE_EF4, 8, VIBRATO_FAST},  // Eighth note
     { NOTE_F4, 8, STACCATO },   // Eighth note //dual with BF2
 
     { NOTE_GF4, 8, STACCATO },  // Eighth note
@@ -546,7 +546,7 @@ const NoteStorage turret1Melody[]  = {
     //-------------------
     //measure 26 //gets lower
 
-    { NOTE_DF4, 8, STACCATO },  // Eighth note
+    { NOTE_DF4, 8, VIBRATO_FAST},  // Eighth note
     { NOTE_EF4, 8, STACCATO },  // Eighth note //dual with BF2
 
     { NOTE_F4, 8, STACCATO },   // Eighth note
@@ -563,7 +563,7 @@ const NoteStorage turret1Melody[]  = {
 
     //-------------------
     //measure 27 //gets lower
-    { NOTE_C4, 8, STACCATO },   // Eighth note
+    { NOTE_C4, 8, VIBRATO_FAST },   // Eighth note
     { NOTE_DF4, 8, STACCATO },  // Eighth note //dual with BF2
 
     { NOTE_EF4, 8, STACCATO },  // Eighth note
@@ -580,7 +580,7 @@ const NoteStorage turret1Melody[]  = {
     //-------------------
     //measure 28 //gets lower  base clef
 
-    { NOTE_A3, 8, STACCATO },   // Eighth note
+    { NOTE_A3, 8, VIBRATO_FAST },   // Eighth note
     { NOTE_BF3, 8, STACCATO },  // Eighth note //dual with BF2
 
     { NOTE_C3, 8, STACCATO },  // Eighth note
@@ -596,7 +596,7 @@ const NoteStorage turret1Melody[]  = {
 
     //-------------------
     //measure 29
-    { NOTE_BF4, 8 },  // Eighth note
+    { NOTE_BF4, 8 ,VIBRATO_FAST},  // Eighth note
 
     { NOTE_C4, 8, STACCATO },   // Eighth note
     { NOTE_DF4, 8, STACCATO },  // Eighth note
@@ -611,7 +611,7 @@ const NoteStorage turret1Melody[]  = {
 
     //-------------------
     //measure 30
-    { NOTE_BF4, 8 },  // Eighth note
+    { NOTE_BF4, 8 ,VIBRATO_FAST},  // Eighth note
 
     { NOTE_C4, 8, STACCATO },   // Eighth note
     { NOTE_DF4, 8, STACCATO },  // Eighth note
@@ -626,7 +626,7 @@ const NoteStorage turret1Melody[]  = {
 
     //-------------------
     //measure 31
-    { NOTE_A4, 8 },  // Eighth note
+    { NOTE_A4, 8 ,VIBRATO_FAST},  // Eighth note
 
     { NOTE_BF4, 8, STACCATO },  // Eighth note
     { NOTE_C4, 8, STACCATO },   // Eighth note
@@ -641,7 +641,7 @@ const NoteStorage turret1Melody[]  = {
 
     //-------------------
     //measure 32
-    { NOTE_A4, 8 },  // Eighth note
+    { NOTE_A4, 8 ,VIBRATO_FAST},  // Eighth note
 
     { NOTE_BF4, 8, STACCATO },  // Eighth note
     { NOTE_C4, 8, STACCATO },   // Eighth note
@@ -656,7 +656,7 @@ const NoteStorage turret1Melody[]  = {
 
     //-------------------
     //measure 33
-    { NOTE_BF4, 8 },  // Eighth note
+    { NOTE_BF4, 8 ,VIBRATO_FAST},  // Eighth note
 
     { NOTE_C4, 8, STACCATO },   // Eighth note
     { NOTE_DF4, 8, STACCATO },  // Eighth note
@@ -671,7 +671,7 @@ const NoteStorage turret1Melody[]  = {
 
     //-------------------
     //measure 34
-    { NOTE_BF4, 8 },  // Eighth note
+    { NOTE_BF4, 8 ,VIBRATO_FAST},  // Eighth note
 
     { NOTE_C4, 8, STACCATO },   // Eighth note
     { NOTE_DF4, 8, STACCATO },  // Eighth note
@@ -686,7 +686,7 @@ const NoteStorage turret1Melody[]  = {
 
     //-------------------
     //measure 35
-    { NOTE_A4, 8 },  // Eighth note
+    { NOTE_A4, 8 ,VIBRATO_FAST},  // Eighth note
 
     { NOTE_BF4, 8, STACCATO },  // Eighth note
     { NOTE_C4, 8, STACCATO },   // Eighth note
@@ -701,7 +701,7 @@ const NoteStorage turret1Melody[]  = {
 
     //-------------------
     //measure 36
-    { NOTE_A4, 8 },  // Eighth note
+    { NOTE_A4, 8 ,VIBRATO_FAST},  // Eighth note
 
     { NOTE_BF4, 8, STACCATO },  // Eighth note
     { NOTE_C4, 8, STACCATO },   // Eighth note
@@ -716,7 +716,7 @@ const NoteStorage turret1Melody[]  = {
 
     //-------------------
     //measure 37
-    { NOTE_BF4, 8 },  // Eighth note
+    { NOTE_BF4, 8 ,VIBRATO_FAST},  // Eighth note
 
     { NOTE_C4, 8, STACCATO },   // Eighth note
     { NOTE_DF4, 8, STACCATO },  // Eighth note
@@ -731,7 +731,7 @@ const NoteStorage turret1Melody[]  = {
 
     //-------------------
     //measure 38
-    { NOTE_BF4, 8 },  // Eighth note
+    { NOTE_BF4, 8 ,VIBRATO_FAST},  // Eighth note
 
     { NOTE_C4, 8, STACCATO },   // Eighth note
     { NOTE_DF4, 8, STACCATO },  // Eighth note
@@ -746,7 +746,7 @@ const NoteStorage turret1Melody[]  = {
 
     //-------------------
     //measure 39
-    { NOTE_A4, 8 },  // Eighth note
+    { NOTE_A4, 8 ,VIBRATO_FAST},  // Eighth note
 
     { NOTE_BF4, 8, STACCATO },  // Eighth note
     { NOTE_C4, 8, STACCATO },   // Eighth note
@@ -761,7 +761,7 @@ const NoteStorage turret1Melody[]  = {
 
     //-------------------
     //measure 40
-    { NOTE_A4, 8 },  // Eighth note
+    { NOTE_A4, 8 ,VIBRATO_FAST},  // Eighth note
 
     { NOTE_BF4, 8, STACCATO },  // Eighth note
     { NOTE_C4, 8, STACCATO },   // Eighth note
@@ -776,7 +776,7 @@ const NoteStorage turret1Melody[]  = {
 
     //-------------------
     //measure 41
-    { NOTE_BF3, 8 },
+    { NOTE_BF3, 8 ,VIBRATO_FAST},
     { NOTE_F3, 8, STACCATO },
     { NOTE_BF3, 8 },
     { NOTE_DF4, 8, STACCATO },
@@ -787,7 +787,7 @@ const NoteStorage turret1Melody[]  = {
 
     //-------------------
     //measure 42
-    { NOTE_BF3, 8 },
+    { NOTE_BF3, 8 ,VIBRATO_FAST},
     { NOTE_DF4, 8, STACCATO },
     { NOTE_BF3, 8 },
     { NOTE_F3, 8, STACCATO },
@@ -797,7 +797,7 @@ const NoteStorage turret1Melody[]  = {
     { NOTE_BF3, 8, STACCATO },
     //-------------------
     //measure 43
-    { NOTE_AF3, 8 },
+    { NOTE_AF3, 8 ,VIBRATO_FAST},
     { NOTE_C4, 8, STACCATO },
     { NOTE_AF3, 8 },
     { NOTE_EF4, 8, STACCATO },
@@ -807,7 +807,7 @@ const NoteStorage turret1Melody[]  = {
     { NOTE_BF3, 8, STACCATO },
     //-------------------
     //measure 44
-    { NOTE_AF3, 8 },
+    { NOTE_AF3, 8 ,VIBRATO_FAST},
     { NOTE_C4, 8, STACCATO },
     { NOTE_AF3, 8 },
     { NOTE_EF4, 8, STACCATO },
@@ -817,7 +817,7 @@ const NoteStorage turret1Melody[]  = {
     { NOTE_BF3, 8, STACCATO },
     //-------------------
     //measure 45
-    { NOTE_BF3, 8 },
+    { NOTE_BF3, 8 ,VIBRATO_FAST},
     { NOTE_DF4, 8 },
     { NOTE_BF3, 8, STACCATO },
     { NOTE_F4, 8, STACCATO },
@@ -827,7 +827,7 @@ const NoteStorage turret1Melody[]  = {
     { NOTE_BF3, 8, STACCATO },
     //-------------------
     //measure 46
-    { NOTE_BF3, 8 },
+    { NOTE_BF3, 8 ,VIBRATO_FAST},
     { NOTE_DF4, 8 },
     { NOTE_BF3, 8, STACCATO },
     { NOTE_F4, 8, STACCATO },
@@ -837,7 +837,7 @@ const NoteStorage turret1Melody[]  = {
     { NOTE_BF3, 8, STACCATO },
     //-------------------
     //measure 47
-    { NOTE_F3, 8 },
+    { NOTE_F3, 8 ,VIBRATO_FAST},
     { NOTE_G3, 8 },
     { NOTE_AF3, 8 },
     { NOTE_BF3, 8 },
@@ -1000,14 +1000,14 @@ const NoteStorage turret2Melody[] = {
     { NOTE_A4, 8 },             //Eighth note
     //-------------------
     //Measure 13
-    { NOTE_BF4, 4, DOTTED },  //Dotted quarter note
-    { NOTE_A4, 8 },           //Eighth note
-    { NOTE_GS4, 4, DOTTED },  //Dotted quarter note
-    { NOTE_G4, 8 },           //Eighth note
+    { NOTE_BF4, 4, DOTTED | VIBRATO_MED},  //Dotted quarter note
+    { NOTE_A4, 8, VIBRATO MED},           //Eighth note
+    { NOTE_GS4, 4, DOTTED | VIBRATO_MED},  //Dotted quarter note
+    { NOTE_G4, 8, VIBRATO_MED},           //Eighth note
     //-------------------
     //Measure 14
-    { NOTE_AF4, 4 },  //Quarter note
-    { NOTE_BF4, 2 },  //Half note
+    { NOTE_AF4, 4, VIBRATO_MED},  //Quarter note
+    { NOTE_BF4, 2, VIBRATO_MED},  //Half note
 
     { REST, 8 },  //Eighth rest
 
@@ -1015,7 +1015,7 @@ const NoteStorage turret2Melody[] = {
     { NOTE_BF3, 16 },  // Sixteenth note
     //-------------------
     //Measure 15
-    { NOTE_DF4, 4, DOTTED },  //Dotted quarter note
+    { NOTE_DF4, 4, DOTTED},  //Dotted quarter note
     { NOTE_C4, 8 },           //Eighth note
     { NOTE_BF4, 4, DOTTED },  //Dotted quarter note
     { NOTE_DF4, (8) },        //Eighth note
