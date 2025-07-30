@@ -21,10 +21,6 @@ void updateBPM() {
 };
 
 
-updateBPM();
-
-
-
 
 
 //vibrato frequencies can be changed
