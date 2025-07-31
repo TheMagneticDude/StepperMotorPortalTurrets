@@ -1,0 +1,678 @@
+{ 392, 4, 0 },  // part 1, offset 0.0, note G4
+{ 587, 2, 0 },  // part 1, offset 0.0, note D5
+{ 392, 8, DOTTED },  // part 1, offset 0.0, note G4
+{ 247, 4, 0 },  // part 1, offset 0.0, note B3
+{ 294, 4, 0 },  // part 1, offset 0.0, note D4
+{ 784, 4, 0 },  // part 1, offset 0.0, note G5
+{ 392, 4, 0 },  // part 1, offset 0.0, note G4
+{ 1175, 4, 0 },  // part 1, offset 0.0, note D6
+{ 392, 4, 0 },  // part 1, offset 0.0, note G4
+{ 988, 4, 0 },  // part 1, offset 0.0, note B5
+{ 587, 4, 0 },  // part 1, offset 0.0, note D5
+{ 523, 4, 0 },  // part 1, offset 0.0, note C5
+{ 392, 4, 0 },  // part 1, offset 0.0, note G4
+{ 294, 4, 0 },  // part 1, offset 0.0, note D4
+{ 784, 4, 0 },  // part 1, offset 0.0, note G5
+{ 392, 4, 0 },  // part 1, offset 0.0, note G4
+{ 1175, 4, 0 },  // part 1, offset 0.0, note D6
+{ 392, 4, 0 },  // part 1, offset 0.0, note G4
+{ 988, 4, 0 },  // part 1, offset 0.0, note B5
+{ 587, 4, 0 },  // part 1, offset 0.0, note D5
+{ 659, 4, 0 },  // part 1, offset 0.0, note E5
+{ 554, 4, 0 },  // part 1, offset 0.0, note C#5
+{ 880, 4, 0 },  // part 1, offset 0.0, note A5
+{ 330, 4, 0 },  // part 1, offset 0.0, note E4
+{ 880, 4, 0 },  // part 1, offset 0.0, note A5
+{ 440, 4, 0 },  // part 1, offset 0.0, note A4
+{ 1319, 4, 0 },  // part 1, offset 0.0, note E6
+{ 294, 16, 0 },  // part 1, offset 0.25, note D4
+{ 494, 4, 0 },  // part 1, offset 1/3, note B4
+{ 1109, 4, 0 },  // part 1, offset 1/3, note C#6
+{ 330, 16, 0 },  // part 1, offset 0.5, note E4
+{ 392, 4, 0 },  // part 1, offset 0.5, note G4
+{ 988, 4, 0 },  // part 1, offset 0.5, note B5
+{ 988, 4, 0 },  // part 1, offset 0.5, note B5
+{ 392, 4, 0 },  // part 1, offset 0.5, note G4
+{ 880, 4, 0 },  // part 1, offset 0.5, note A5
+{ 554, 4, 0 },  // part 1, offset 0.5, note C#5
+{ 880, 4, 0 },  // part 1, offset 0.5, note A5
+{ 494, 4, 0 },  // part 1, offset 2/3, note B4
+{ 1109, 4, 0 },  // part 1, offset 2/3, note C#6
+{ 294, 16, 0 },  // part 1, offset 0.75, note D4
+{ 330, 16, 0 },  // part 1, offset 0.75, note E4
+{ 988, 4, 0 },  // part 1, offset 0.75, note B5
+{ 494, 2, 0 },  // part 1, offset 1.0, note B4
+{ 370, 4, 0 },  // part 1, offset 1.0, note F#4
+{ 247, 4, 0 },  // part 1, offset 1.0, note B3
+{ 784, 4, 0 },  // part 1, offset 1.0, note G5
+{ 370, 4, 0 },  // part 1, offset 1.0, note F#4
+{ 165, 16, 0 },  // part 1, offset 1.0, note E3
+{ 740, 4, 0 },  // part 1, offset 1.0, note F#5
+{ 494, 4, 0 },  // part 1, offset 1.0, note B4
+{ 784, 4, 0 },  // part 1, offset 1.0, note G5
+{ 440, 4, 0 },  // part 1, offset 1.0, note A4
+{ 1109, 4, 0 },  // part 1, offset 1.0, note C#6
+{ 554, 4, 0 },  // part 1, offset 1.0, note C#5
+{ 392, 4, 0 },  // part 1, offset 1.0, note G4
+{ 3520, 4, 0 },  // part 1, offset 1.0, note A7
+{ 370, 16, 0 },  // part 1, offset 1.25, note F#4
+{ 440, 4, 0 },  // part 1, offset 4/3, note A4
+{ 294, 4, 0 },  // part 1, offset 4/3, note D4
+{ 587, 4, 0 },  // part 1, offset 4/3, note D5
+{ 330, 4, 0 },  // part 1, offset 4/3, note E4
+{ 659, 4, 0 },  // part 1, offset 4/3, note E5
+{ 330, 16, 0 },  // part 1, offset 1.5, note E4
+{ 587, 4, 0 },  // part 1, offset 1.5, note D5
+{ 784, 4, 0 },  // part 1, offset 1.5, note G5
+{ 494, 4, 0 },  // part 1, offset 1.5, note B4
+{ 1568, 4, 0 },  // part 1, offset 1.5, note G6
+{ 554, 4, 0 },  // part 1, offset 1.5, note C#5
+{ 1760, 4, 0 },  // part 1, offset 1.5, note A6
+{ 494, 4, 0 },  // part 1, offset 5/3, note B4
+{ 247, 4, 0 },  // part 1, offset 5/3, note B3
+{ 494, 4, 0 },  // part 1, offset 5/3, note B4
+{ 277, 4, 0 },  // part 1, offset 5/3, note C#4
+{ 554, 4, 0 },  // part 1, offset 5/3, note C#5
+{ 370, 16, 0 },  // part 1, offset 1.75, note F#4
+{ 185, 16, 0 },  // part 1, offset 1.75, note F#3
+{ 440, 4, 0 },  // part 1, offset 2.0, note A4
+{ 523, 4, 0 },  // part 1, offset 2.0, note C5
+{ 330, 4, 0 },  // part 1, offset 2.0, note E4
+{ 1480, 4, 0 },  // part 1, offset 2.0, note F#6
+{ 330, 4, 0 },  // part 1, offset 2.0, note E4
+{ 1480, 4, 0 },  // part 1, offset 2.0, note F#6
+{ 262, 4, 0 },  // part 1, offset 2.0, note C4
+{ 196, 8, 0 },  // part 1, offset 2.0, note G3
+{ 440, 4, 0 },  // part 1, offset 2.0, note A4
+{ 494, 4, 0 },  // part 1, offset 2.0, note B4
+{ 1480, 4, 0 },  // part 1, offset 2.0, note F#6
+{ 370, 4, 0 },  // part 1, offset 2.0, note F#4
+{ 659, 4, 0 },  // part 1, offset 2.0, note E5
+{ 740, 4, 0 },  // part 1, offset 2.0, note F#5
+{ 880, 4, 0 },  // part 1, offset 2.0, note A5
+{ 370, 4, 0 },  // part 1, offset 2.0, note F#4
+{ 1109, 4, 0 },  // part 1, offset 2.0, note C#6
+{ 494, 4, 0 },  // part 1, offset 2.0, note B4
+{ 831, 4, 0 },  // part 1, offset 2.0, note G#5
+{ 494, 4, 0 },  // part 1, offset 2.0, note B4
+{ 1661, 4, 0 },  // part 1, offset 2.0, note G#6
+{ 370, 4, 0 },  // part 1, offset 2.0, note F#4
+{ 370, 16, 0 },  // part 1, offset 2.25, note F#4
+{ 523, 4, 0 },  // part 1, offset 7/3, note C5
+{ 1175, 4, 0 },  // part 1, offset 7/3, note D6
+{ 587, 4, 0 },  // part 1, offset 7/3, note D5
+{ 587, 4, 0 },  // part 1, offset 7/3, note D5
+{ 1047, 4, 0 },  // part 1, offset 7/3, note C6
+{ 523, 4, 0 },  // part 1, offset 7/3, note C5
+{ 1319, 4, 0 },  // part 1, offset 7/3, note E6
+{ 659, 4, 0 },  // part 1, offset 7/3, note E5
+{ 392, 16, 0 },  // part 1, offset 2.5, note G4
+{ 392, 4, 0 },  // part 1, offset 2.5, note G4
+{ 740, 4, 0 },  // part 1, offset 2.5, note F#5
+{ 494, 4, 0 },  // part 1, offset 8/3, note B4
+{ 1568, 4, 0 },  // part 1, offset 8/3, note G6
+{ 784, 4, 0 },  // part 1, offset 8/3, note G5
+{ 784, 4, 0 },  // part 1, offset 8/3, note G5
+{ 988, 4, 0 },  // part 1, offset 8/3, note B5
+{ 494, 4, 0 },  // part 1, offset 8/3, note B4
+{ 1760, 4, 0 },  // part 1, offset 8/3, note A6
+{ 880, 4, 0 },  // part 1, offset 8/3, note A5
+{ 440, 16, 0 },  // part 1, offset 2.75, note A4
+{ 440, 4, 0 },  // part 1, offset 3.0, note A4
+{ 392, 16, 0 },  // part 1, offset 3.0, note G4
+{ 392, 8, 0 },  // part 1, offset 3.0, note G4
+{ 740, 4, 0 },  // part 1, offset 3.0, note F#5
+{ 740, 4, 0 },  // part 1, offset 3.0, note F#5
+{ 880, 4, 0 },  // part 1, offset 3.0, note A5
+{ 440, 4, 0 },  // part 1, offset 3.0, note A4
+{ 1480, 4, 0 },  // part 1, offset 3.0, note F#6
+{ 330, 4, 0 },  // part 1, offset 3.0, note E4
+{ 370, 4, 0 },  // part 1, offset 3.0, note F#4
+{ 440, 4, 0 },  // part 1, offset 3.0, note A4
+{ 494, 4, 0 },  // part 1, offset 3.0, note B4
+{ 440, 4, 0 },  // part 1, offset 3.0, note A4
+{ 1480, 4, 0 },  // part 1, offset 3.0, note F#6
+{ 370, 4, 0 },  // part 1, offset 3.0, note F#4
+{ 880, 4, 0 },  // part 1, offset 3.0, note A5
+{ 440, 4, 0 },  // part 1, offset 3.0, note A4
+{ 831, 4, 0 },  // part 1, offset 3.0, note G#5
+{ 831, 4, 0 },  // part 1, offset 3.0, note G#5
+{ 988, 4, 0 },  // part 1, offset 3.0, note B5
+{ 494, 4, 0 },  // part 1, offset 3.0, note B4
+{ 1661, 4, 0 },  // part 1, offset 3.0, note G#6
+{ 330, 16, 0 },  // part 1, offset 3.25, note E4
+{ 587, 4, 0 },  // part 1, offset 10/3, note D5
+{ 1047, 4, 0 },  // part 1, offset 10/3, note C6
+{ 392, 4, 0 },  // part 1, offset 10/3, note G4
+{ 1047, 4, 0 },  // part 1, offset 10/3, note C6
+{ 392, 4, 0 },  // part 1, offset 10/3, note G4
+{ 587, 4, 0 },  // part 1, offset 10/3, note D5
+{ 784, 4, 0 },  // part 1, offset 10/3, note G5
+{ 587, 4, 0 },  // part 1, offset 10/3, note D5
+{ 784, 4, 0 },  // part 1, offset 10/3, note G5
+{ 659, 4, 0 },  // part 1, offset 10/3, note E5
+{ 880, 4, 0 },  // part 1, offset 10/3, note A5
+{ 659, 4, 0 },  // part 1, offset 10/3, note E5
+{ 440, 8, 0 },  // part 1, offset 3.5, note A4
+{ 370, 8, 0 },  // part 1, offset 3.5, note F#4
+{ 880, 4, 0 },  // part 1, offset 3.5, note A5
+{ 440, 4, 0 },  // part 1, offset 3.5, note A4
+{ 880, 4, 0 },  // part 1, offset 3.5, note A5
+{ 330, 4, 0 },  // part 1, offset 3.5, note E4
+{ 880, 4, 0 },  // part 1, offset 3.5, note A5
+{ 440, 4, 0 },  // part 1, offset 3.5, note A4
+{ 880, 4, 0 },  // part 1, offset 3.5, note A5
+{ 494, 4, 0 },  // part 1, offset 3.5, note B4
+{ 988, 4, 0 },  // part 1, offset 3.5, note B5
+{ 494, 4, 0 },  // part 1, offset 11/3, note B4
+{ 988, 4, 0 },  // part 1, offset 11/3, note B5
+{ 370, 4, 0 },  // part 1, offset 11/3, note F#4
+{ 988, 4, 0 },  // part 1, offset 11/3, note B5
+{ 370, 4, 0 },  // part 1, offset 11/3, note F#4
+{ 494, 4, 0 },  // part 1, offset 11/3, note B4
+{ 740, 4, 0 },  // part 1, offset 11/3, note F#5
+{ 494, 4, 0 },  // part 1, offset 11/3, note B4
+{ 740, 4, 0 },  // part 1, offset 11/3, note F#5
+{ 554, 4, 0 },  // part 1, offset 11/3, note C#5
+{ 831, 4, 0 },  // part 1, offset 11/3, note G#5
+{ 554, 4, 0 },  // part 1, offset 11/3, note C#5
+{ 494, 16, 0 },  // part 1, offset 3.75, note B4
+{ 220, 16, 0 },  // part 1, offset 3.75, note A3
+{ 98, 4, 0 },  // part 2, offset 0.0, note G2
+{ 165, 4, 0 },  // part 2, offset 0.0, note E3
+{ 82, 4, 0 },  // part 2, offset 0.0, note E2
+{ 196, 4, 0 },  // part 2, offset 0.0, note G3
+{ 82, 4, 0 },  // part 2, offset 0.0, note E2
+{ 73, 4, 0 },  // part 2, offset 0.0, note D2
+{ 196, 4, 0 },  // part 2, offset 0.0, note G3
+{ 147, 4, 0 },  // part 2, offset 0.0, note D3
+{ 98, 4, 0 },  // part 2, offset 0.0, note G2
+{ 147, 4, 0 },  // part 2, offset 0.0, note D3
+{ 131, 4, 0 },  // part 2, offset 0.0, note C3
+{ 220, 4, 0 },  // part 2, offset 0.0, note A3
+{ 65, 4, 0 },  // part 2, offset 0.0, note C2
+{ 147, 4, 0 },  // part 2, offset 0.0, note D3
+{ 65, 4, 0 },  // part 2, offset 0.0, note C2
+{ 131, 4, 0 },  // part 2, offset 0.0, note C3
+{ 73, 4, 0 },  // part 2, offset 0.0, note D2
+{ 131, 4, 0 },  // part 2, offset 0.0, note C3
+{ 65, 4, 0 },  // part 2, offset 0.0, note C2
+{ 131, 4, 0 },  // part 2, offset 0.0, note C3
+{ 262, 4, 0 },  // part 2, offset 0.0, note C4
+{ 131, 16, 0 },  // part 2, offset 0.0, note C3
+{ 98, 4, 0 },  // part 2, offset 0.0, note G2
+{ 165, 4, 0 },  // part 2, offset 0.0, note E3
+{ 82, 4, 0 },  // part 2, offset 0.0, note E2
+{ 196, 4, 0 },  // part 2, offset 0.0, note G3
+{ 49, 4, 0 },  // part 2, offset 0.0, note G1
+{ 82, 4, 0 },  // part 2, offset 0.0, note E2
+{ 41, 4, 0 },  // part 2, offset 0.0, note E1
+{ 98, 4, 0 },  // part 2, offset 0.0, note G2
+{ 46, 4, 0 },  // part 2, offset 0.0, note F#1
+{ 110, 4, 0 },  // part 2, offset 0.0, note A2
+{ 55, 4, 0 },  // part 2, offset 0.0, note A1
+{ 110, 4, 0 },  // part 2, offset 0.0, note A2
+{ 46, 4, 0 },  // part 2, offset 0.0, note F#1
+{ 110, 4, 0 },  // part 2, offset 0.0, note A2
+{ 55, 4, 0 },  // part 2, offset 0.0, note A1
+{ 185, 16, 0 },  // part 2, offset 0.25, note F#3
+{ 65, 4, 0 },  // part 2, offset 1/3, note C2
+{ 131, 4, 0 },  // part 2, offset 1/3, note C3
+{ 65, 4, 0 },  // part 2, offset 1/3, note C2
+{ 131, 4, 0 },  // part 2, offset 1/3, note C3
+{ 49, 4, 0 },  // part 2, offset 1/3, note G1
+{ 98, 4, 0 },  // part 2, offset 1/3, note G2
+{ 55, 4, 0 },  // part 2, offset 1/3, note A1
+{ 73, 4, 0 },  // part 2, offset 0.5, note D2
+{ 147, 4, 0 },  // part 2, offset 0.5, note D3
+{ 65, 4, 0 },  // part 2, offset 0.5, note C2
+{ 147, 4, 0 },  // part 2, offset 0.5, note D3
+{ 73, 4, 0 },  // part 2, offset 0.5, note D2
+{ 147, 4, 0 },  // part 2, offset 0.5, note D3
+{ 65, 4, 0 },  // part 2, offset 0.5, note C2
+{ 147, 4, 0 },  // part 2, offset 0.5, note D3
+{ 196, 16, 0 },  // part 2, offset 0.5, note G3
+{ 98, 4, 0 },  // part 2, offset 0.5, note G2
+{ 196, 4, 0 },  // part 2, offset 0.5, note G3
+{ 82, 4, 0 },  // part 2, offset 0.5, note E2
+{ 196, 4, 0 },  // part 2, offset 0.5, note G3
+{ 82, 4, 0 },  // part 2, offset 0.5, note E2
+{ 165, 4, 0 },  // part 2, offset 0.5, note E3
+{ 98, 4, 0 },  // part 2, offset 0.5, note G2
+{ 82, 4, 0 },  // part 2, offset 0.5, note E2
+{ 49, 4, 0 },  // part 2, offset 0.5, note G1
+{ 98, 4, 0 },  // part 2, offset 0.5, note G2
+{ 41, 4, 0 },  // part 2, offset 0.5, note E1
+{ 98, 4, 0 },  // part 2, offset 0.5, note G2
+{ 55, 4, 0 },  // part 2, offset 0.5, note A1
+{ 110, 4, 0 },  // part 2, offset 0.5, note A2
+{ 46, 4, 0 },  // part 2, offset 0.5, note F#1
+{ 110, 4, 0 },  // part 2, offset 0.5, note A2
+{ 46, 4, 0 },  // part 2, offset 0.5, note F#1
+{ 92, 4, 0 },  // part 2, offset 0.5, note F#2
+{ 55, 4, 0 },  // part 2, offset 0.5, note A1
+{ 92, 4, 0 },  // part 2, offset 0.5, note F#2
+{ 55, 4, 0 },  // part 2, offset 0.5, note A1
+{ 110, 4, 0 },  // part 2, offset 0.5, note A2
+{ 46, 4, 0 },  // part 2, offset 0.5, note F#1
+{ 110, 4, 0 },  // part 2, offset 0.5, note A2
+{ 65, 4, 0 },  // part 2, offset 2/3, note C2
+{ 131, 4, 0 },  // part 2, offset 2/3, note C3
+{ 65, 4, 0 },  // part 2, offset 2/3, note C2
+{ 131, 4, 0 },  // part 2, offset 2/3, note C3
+{ 49, 4, 0 },  // part 2, offset 2/3, note G1
+{ 98, 4, 0 },  // part 2, offset 2/3, note G2
+{ 55, 4, 0 },  // part 2, offset 2/3, note A1
+{ 73, 4, 0 },  // part 2, offset 0.75, note D2
+{ 131, 4, 0 },  // part 2, offset 0.75, note C3
+{ 73, 4, 0 },  // part 2, offset 0.75, note D2
+{ 131, 4, 0 },  // part 2, offset 0.75, note C3
+{ 220, 16, 0 },  // part 2, offset 0.75, note A3
+{ 98, 4, 0 },  // part 2, offset 0.75, note G2
+{ 165, 4, 0 },  // part 2, offset 0.75, note E3
+{ 98, 4, 0 },  // part 2, offset 0.75, note G2
+{ 165, 4, 0 },  // part 2, offset 0.75, note E3
+{ 41, 4, 0 },  // part 2, offset 0.75, note E1
+{ 82, 4, 0 },  // part 2, offset 0.75, note E2
+{ 41, 4, 0 },  // part 2, offset 0.75, note E1
+{ 98, 4, 0 },  // part 2, offset 0.75, note G2
+{ 46, 4, 0 },  // part 2, offset 0.75, note F#1
+{ 92, 4, 0 },  // part 2, offset 0.75, note F#2
+{ 55, 4, 0 },  // part 2, offset 0.75, note A1
+{ 92, 4, 0 },  // part 2, offset 0.75, note F#2
+{ 46, 4, 0 },  // part 2, offset 0.75, note F#1
+{ 92, 4, 0 },  // part 2, offset 0.75, note F#2
+{ 46, 4, 0 },  // part 2, offset 0.75, note F#1
+{ 110, 4, 0 },  // part 2, offset 0.75, note A2
+{ 196, 4, 0 },  // part 2, offset 1.0, note G3
+{ 165, 4, 0 },  // part 2, offset 1.0, note E3
+{ 196, 4, 0 },  // part 2, offset 1.0, note G3
+{ 165, 4, 0 },  // part 2, offset 1.0, note E3
+{ 196, 4, 0 },  // part 2, offset 1.0, note G3
+{ 92, 4, 0 },  // part 2, offset 1.0, note F#2
+{ 147, 4, 0 },  // part 2, offset 1.0, note D3
+{ 294, 4, 0 },  // part 2, offset 1.0, note D4
+{ 110, 4, 0 },  // part 2, offset 1.0, note A2
+{ 147, 4, 0 },  // part 2, offset 1.0, note D3
+{ 73, 4, 0 },  // part 2, offset 1.0, note D2
+{ 131, 4, 0 },  // part 2, offset 1.0, note C3
+{ 65, 4, 0 },  // part 2, offset 1.0, note C2
+{ 131, 4, 0 },  // part 2, offset 1.0, note C3
+{ 73, 4, 0 },  // part 2, offset 1.0, note D2
+{ 147, 4, 0 },  // part 2, offset 1.0, note D3
+{ 73, 4, 0 },  // part 2, offset 1.0, note D2
+{ 131, 4, 0 },  // part 2, offset 1.0, note C3
+{ 147, 4, 0 },  // part 2, offset 1.0, note D3
+{ 196, 16, 0 },  // part 2, offset 1.0, note G3
+{ 98, 4, 0 },  // part 2, offset 1.0, note G2
+{ 196, 4, 0 },  // part 2, offset 1.0, note G3
+{ 82, 4, 0 },  // part 2, offset 1.0, note E2
+{ 196, 4, 0 },  // part 2, offset 1.0, note G3
+{ 49, 4, 0 },  // part 2, offset 1.0, note G1
+{ 82, 4, 0 },  // part 2, offset 1.0, note E2
+{ 55, 4, 0 },  // part 2, offset 1.0, note A1
+{ 92, 4, 0 },  // part 2, offset 1.0, note F#2
+{ 55, 4, 0 },  // part 2, offset 1.0, note A1
+{ 110, 4, 0 },  // part 2, offset 1.0, note A2
+{ 55, 4, 0 },  // part 2, offset 1.0, note A1
+{ 175, 4, 0 },  // part 2, offset 1.0, note F3
+{ 131, 4, 0 },  // part 2, offset 1.0, note C3
+{ 28, 4, 0 },  // part 2, offset 1.0, note A0
+{ 165, 16, 0 },  // part 2, offset 1.25, note E3
+{ 82, 4, 0 },  // part 2, offset 1.25, note E2
+{ 165, 4, 0 },  // part 2, offset 1.25, note E3
+{ 41, 4, 0 },  // part 2, offset 1.25, note E1
+{ 92, 4, 0 },  // part 2, offset 1.25, note F#2
+{ 55, 4, 0 },  // part 2, offset 1.25, note A1
+{ 110, 4, 0 },  // part 2, offset 1.25, note A2
+{ 46, 4, 0 },  // part 2, offset 1.25, note F#1
+{ 65, 4, 0 },  // part 2, offset 4/3, note C2
+{ 131, 4, 0 },  // part 2, offset 4/3, note C3
+{ 73, 4, 0 },  // part 2, offset 4/3, note D2
+{ 131, 4, 0 },  // part 2, offset 4/3, note C3
+{ 73, 4, 0 },  // part 2, offset 1.5, note D2
+{ 131, 4, 0 },  // part 2, offset 1.5, note C3
+{ 73, 4, 0 },  // part 2, offset 1.5, note D2
+{ 131, 4, 0 },  // part 2, offset 1.5, note C3
+{ 131, 16, 0 },  // part 2, offset 1.5, note C3
+{ 98, 4, 0 },  // part 2, offset 1.5, note G2
+{ 196, 4, 0 },  // part 2, offset 1.5, note G3
+{ 82, 4, 0 },  // part 2, offset 1.5, note E2
+{ 196, 4, 0 },  // part 2, offset 1.5, note G3
+{ 98, 4, 0 },  // part 2, offset 1.5, note G2
+{ 98, 4, 0 },  // part 2, offset 1.5, note G2
+{ 41, 4, 0 },  // part 2, offset 1.5, note E1
+{ 82, 4, 0 },  // part 2, offset 1.5, note E2
+{ 49, 4, 0 },  // part 2, offset 1.5, note G1
+{ 82, 4, 0 },  // part 2, offset 1.5, note E2
+{ 49, 4, 0 },  // part 2, offset 1.5, note G1
+{ 98, 4, 0 },  // part 2, offset 1.5, note G2
+{ 55, 4, 0 },  // part 2, offset 1.5, note A1
+{ 92, 4, 0 },  // part 2, offset 1.5, note F#2
+{ 55, 4, 0 },  // part 2, offset 1.5, note A1
+{ 110, 4, 0 },  // part 2, offset 1.5, note A2
+{ 55, 4, 0 },  // part 2, offset 1.5, note A1
+{ 110, 4, 0 },  // part 2, offset 1.5, note A2
+{ 46, 4, 0 },  // part 2, offset 1.5, note F#1
+{ 92, 4, 0 },  // part 2, offset 1.5, note F#2
+{ 55, 4, 0 },  // part 2, offset 1.5, note A1
+{ 92, 4, 0 },  // part 2, offset 1.5, note F#2
+{ 55, 4, 0 },  // part 2, offset 1.5, note A1
+{ 110, 4, 0 },  // part 2, offset 1.5, note A2
+{ 65, 4, 0 },  // part 2, offset 5/3, note C2
+{ 131, 4, 0 },  // part 2, offset 5/3, note C3
+{ 73, 4, 0 },  // part 2, offset 5/3, note D2
+{ 131, 4, 0 },  // part 2, offset 5/3, note C3
+{ 147, 16, 0 },  // part 2, offset 1.75, note D3
+{ 98, 4, 0 },  // part 2, offset 1.75, note G2
+{ 165, 4, 0 },  // part 2, offset 1.75, note E3
+{ 41, 4, 0 },  // part 2, offset 1.75, note E1
+{ 98, 4, 0 },  // part 2, offset 1.75, note G2
+{ 49, 4, 0 },  // part 2, offset 1.75, note G1
+{ 65, 4, 0 },  // part 2, offset 1.75, note C2
+{ 46, 4, 0 },  // part 2, offset 1.75, note F#1
+{ 110, 4, 0 },  // part 2, offset 1.75, note A2
+{ 46, 4, 0 },  // part 2, offset 1.75, note F#1
+{ 110, 4, 0 },  // part 2, offset 1.75, note A2
+{ 55, 4, 0 },  // part 2, offset 1.75, note A1
+{ 73, 4, 0 },  // part 2, offset 2.0, note D2
+{ 131, 4, 0 },  // part 2, offset 2.0, note C3
+{ 65, 4, 0 },  // part 2, offset 2.0, note C2
+{ 131, 4, 0 },  // part 2, offset 2.0, note C3
+{ 98, 4, 0 },  // part 2, offset 2.0, note G2
+{ 196, 4, 0 },  // part 2, offset 2.0, note G3
+{ 98, 4, 0 },  // part 2, offset 2.0, note G2
+{ 82, 4, 0 },  // part 2, offset 2.0, note E2
+{ 147, 4, 0 },  // part 2, offset 2.0, note D3
+{ 165, 4, 0 },  // part 2, offset 2.0, note E3
+{ 82, 4, 0 },  // part 2, offset 2.0, note E2
+{ 196, 4, 0 },  // part 2, offset 2.0, note G3
+{ 98, 4, 0 },  // part 2, offset 2.0, note G2
+{ 196, 4, 0 },  // part 2, offset 2.0, note G3
+{ 98, 4, 0 },  // part 2, offset 2.0, note G2
+{ 165, 4, 0 },  // part 2, offset 2.0, note E3
+{ 131, 16, 0 },  // part 2, offset 2.0, note C3
+{ 196, 4, 0 },  // part 2, offset 2.0, note G3
+{ 131, 4, 0 },  // part 2, offset 2.0, note C3
+{ 185, 4, 0 },  // part 2, offset 2.0, note F#3
+{ 147, 4, 0 },  // part 2, offset 2.0, note D3
+{ 73, 4, 0 },  // part 2, offset 2.0, note D2
+{ 131, 4, 0 },  // part 2, offset 2.0, note C3
+{ 65, 4, 0 },  // part 2, offset 2.0, note C2
+{ 131, 4, 0 },  // part 2, offset 2.0, note C3
+{ 33, 4, 0 },  // part 2, offset 2.0, note C1
+{ 73, 4, 0 },  // part 2, offset 2.0, note D2
+{ 41, 4, 0 },  // part 2, offset 2.0, note E1
+{ 73, 4, 0 },  // part 2, offset 2.0, note D2
+{ 37, 4, 0 },  // part 2, offset 2.0, note D1
+{ 73, 4, 0 },  // part 2, offset 2.0, note D2
+{ 37, 4, 0 },  // part 2, offset 2.0, note D1
+{ 82, 4, 0 },  // part 2, offset 2.0, note E2
+{ 41, 4, 0 },  // part 2, offset 2.0, note E1
+{ 73, 4, 0 },  // part 2, offset 2.0, note D2
+{ 147, 4, 0 },  // part 2, offset 2.0, note D3
+{ 294, 4, 0 },  // part 2, offset 2.0, note D4
+{ 247, 4, 0 },  // part 2, offset 2.0, note B3
+{ 147, 16, 0 },  // part 2, offset 2.25, note D3
+{ 65, 4, 0 },  // part 2, offset 2.25, note C2
+{ 65, 4, 0 },  // part 2, offset 7/3, note C2
+{ 131, 4, 0 },  // part 2, offset 7/3, note C3
+{ 65, 4, 0 },  // part 2, offset 7/3, note C2
+{ 73, 4, 0 },  // part 2, offset 7/3, note D2
+{ 37, 4, 0 },  // part 2, offset 7/3, note D1
+{ 73, 4, 0 },  // part 2, offset 7/3, note D2
+{ 165, 16, 0 },  // part 2, offset 2.5, note E3
+{ 98, 4, 0 },  // part 2, offset 2.5, note G2
+{ 165, 4, 0 },  // part 2, offset 2.5, note E3
+{ 98, 4, 0 },  // part 2, offset 2.5, note G2
+{ 196, 4, 0 },  // part 2, offset 2.5, note G3
+{ 82, 4, 0 },  // part 2, offset 2.5, note E2
+{ 196, 4, 0 },  // part 2, offset 2.5, note G3
+{ 98, 4, 0 },  // part 2, offset 2.5, note G2
+{ 196, 4, 0 },  // part 2, offset 2.5, note G3
+{ 82, 4, 0 },  // part 2, offset 2.5, note E2
+{ 196, 4, 0 },  // part 2, offset 2.5, note G3
+{ 82, 4, 0 },  // part 2, offset 2.5, note E2
+{ 165, 4, 0 },  // part 2, offset 2.5, note E3
+{ 165, 16, 0 },  // part 2, offset 2.5, note E3
+{ 73, 4, 0 },  // part 2, offset 2.5, note D2
+{ 131, 4, 0 },  // part 2, offset 2.5, note C3
+{ 73, 4, 0 },  // part 2, offset 2.5, note D2
+{ 147, 4, 0 },  // part 2, offset 2.5, note D3
+{ 37, 4, 0 },  // part 2, offset 2.5, note D1
+{ 65, 4, 0 },  // part 2, offset 2.5, note C2
+{ 37, 4, 0 },  // part 2, offset 2.5, note D1
+{ 73, 4, 0 },  // part 2, offset 2.5, note D2
+{ 33, 4, 0 },  // part 2, offset 2.5, note C1
+{ 65, 4, 0 },  // part 2, offset 2.5, note C2
+{ 41, 4, 0 },  // part 2, offset 2.5, note E1
+{ 82, 4, 0 },  // part 2, offset 2.5, note E2
+{ 37, 4, 0 },  // part 2, offset 2.5, note D1
+{ 82, 4, 0 },  // part 2, offset 2.5, note E2
+{ 41, 4, 0 },  // part 2, offset 2.5, note E1
+{ 82, 4, 0 },  // part 2, offset 2.5, note E2
+{ 37, 4, 0 },  // part 2, offset 2.5, note D1
+{ 82, 4, 0 },  // part 2, offset 2.5, note E2
+{ 37, 4, 0 },  // part 2, offset 2.5, note D1
+{ 73, 4, 0 },  // part 2, offset 2.5, note D2
+{ 65, 4, 0 },  // part 2, offset 8/3, note C2
+{ 131, 4, 0 },  // part 2, offset 8/3, note C3
+{ 65, 4, 0 },  // part 2, offset 8/3, note C2
+{ 73, 4, 0 },  // part 2, offset 8/3, note D2
+{ 37, 4, 0 },  // part 2, offset 8/3, note D1
+{ 73, 4, 0 },  // part 2, offset 8/3, note D2
+{ 147, 16, 0 },  // part 2, offset 2.75, note D3
+{ 82, 4, 0 },  // part 2, offset 2.75, note E2
+{ 196, 4, 0 },  // part 2, offset 2.75, note G3
+{ 98, 4, 0 },  // part 2, offset 2.75, note G2
+{ 196, 4, 0 },  // part 2, offset 2.75, note G3
+{ 98, 4, 0 },  // part 2, offset 2.75, note G2
+{ 165, 4, 0 },  // part 2, offset 2.75, note E3
+{ 196, 16, 0 },  // part 2, offset 2.75, note G3
+{ 65, 4, 0 },  // part 2, offset 2.75, note C2
+{ 147, 4, 0 },  // part 2, offset 2.75, note D3
+{ 37, 4, 0 },  // part 2, offset 2.75, note D1
+{ 65, 4, 0 },  // part 2, offset 2.75, note C2
+{ 37, 4, 0 },  // part 2, offset 2.75, note D1
+{ 73, 4, 0 },  // part 2, offset 2.75, note D2
+{ 33, 4, 0 },  // part 2, offset 2.75, note C1
+{ 65, 4, 0 },  // part 2, offset 2.75, note C2
+{ 41, 4, 0 },  // part 2, offset 2.75, note E1
+{ 82, 4, 0 },  // part 2, offset 2.75, note E2
+{ 37, 4, 0 },  // part 2, offset 2.75, note D1
+{ 82, 4, 0 },  // part 2, offset 2.75, note E2
+{ 41, 4, 0 },  // part 2, offset 2.75, note E1
+{ 82, 4, 0 },  // part 2, offset 2.75, note E2
+{ 37, 4, 0 },  // part 2, offset 2.75, note D1
+{ 82, 4, 0 },  // part 2, offset 2.75, note E2
+{ 37, 4, 0 },  // part 2, offset 2.75, note D1
+{ 73, 4, 0 },  // part 2, offset 2.75, note D2
+{ 147, 4, 0 },  // part 2, offset 3.0, note D3
+{ 165, 4, 0 },  // part 2, offset 3.0, note E3
+{ 147, 4, 0 },  // part 2, offset 3.0, note D3
+{ 165, 4, 0 },  // part 2, offset 3.0, note E3
+{ 147, 4, 0 },  // part 2, offset 3.0, note D3
+{ 165, 16, 0 },  // part 2, offset 3.0, note E3
+{ 147, 4, 0 },  // part 2, offset 3.0, note D3
+{ 165, 4, 0 },  // part 2, offset 3.0, note E3
+{ 196, 4, 0 },  // part 2, offset 3.0, note G3
+{ 196, 4, 0 },  // part 2, offset 3.0, note G3
+{ 98, 4, 0 },  // part 2, offset 3.0, note G2
+{ 165, 4, 0 },  // part 2, offset 3.0, note E3
+{ 98, 4, 0 },  // part 2, offset 3.0, note G2
+{ 165, 4, 0 },  // part 2, offset 3.0, note E3
+{ 82, 4, 0 },  // part 2, offset 3.0, note E2
+{ 165, 16, 0 },  // part 2, offset 3.0, note E3
+{ 147, 4, 0 },  // part 2, offset 3.0, note D3
+{ 65, 4, 0 },  // part 2, offset 3.0, note C2
+{ 147, 4, 0 },  // part 2, offset 3.0, note D3
+{ 65, 4, 0 },  // part 2, offset 3.0, note C2
+{ 147, 4, 0 },  // part 2, offset 3.0, note D3
+{ 37, 4, 0 },  // part 2, offset 3.0, note D1
+{ 73, 4, 0 },  // part 2, offset 3.0, note D2
+{ 41, 4, 0 },  // part 2, offset 3.0, note E1
+{ 82, 4, 0 },  // part 2, offset 3.0, note E2
+{ 185, 16, 0 },  // part 2, offset 3.25, note F#3
+{ 73, 4, 0 },  // part 2, offset 3.25, note D2
+{ 33, 4, 0 },  // part 2, offset 3.25, note C1
+{ 65, 4, 0 },  // part 2, offset 3.25, note C2
+{ 37, 4, 0 },  // part 2, offset 3.25, note D1
+{ 65, 4, 0 },  // part 2, offset 3.25, note C2
+{ 37, 4, 0 },  // part 2, offset 3.25, note D1
+{ 73, 4, 0 },  // part 2, offset 3.25, note D2
+{ 41, 4, 0 },  // part 2, offset 3.25, note E1
+{ 73, 4, 0 },  // part 2, offset 3.25, note D2
+{ 41, 4, 0 },  // part 2, offset 3.25, note E1
+{ 82, 4, 0 },  // part 2, offset 3.25, note E2
+{ 41, 4, 0 },  // part 2, offset 3.25, note E1
+{ 73, 4, 0 },  // part 2, offset 3.25, note D2
+{ 41, 4, 0 },  // part 2, offset 3.25, note E1
+{ 82, 4, 0 },  // part 2, offset 3.25, note E2
+{ 37, 4, 0 },  // part 2, offset 3.25, note D1
+{ 65, 4, 0 },  // part 2, offset 10/3, note C2
+{ 131, 4, 0 },  // part 2, offset 10/3, note C3
+{ 73, 4, 0 },  // part 2, offset 10/3, note D2
+{ 73, 4, 0 },  // part 2, offset 10/3, note D2
+{ 41, 4, 0 },  // part 2, offset 10/3, note E1
+{ 82, 4, 0 },  // part 2, offset 10/3, note E2
+{ 165, 16, 0 },  // part 2, offset 3.5, note E3
+{ 82, 4, 0 },  // part 2, offset 3.5, note E2
+{ 196, 4, 0 },  // part 2, offset 3.5, note G3
+{ 98, 4, 0 },  // part 2, offset 3.5, note G2
+{ 196, 4, 0 },  // part 2, offset 3.5, note G3
+{ 98, 4, 0 },  // part 2, offset 3.5, note G2
+{ 165, 4, 0 },  // part 2, offset 3.5, note E3
+{ 73, 4, 0 },  // part 2, offset 3.5, note D2
+{ 131, 4, 0 },  // part 2, offset 3.5, note C3
+{ 37, 4, 0 },  // part 2, offset 3.5, note D1
+{ 73, 4, 0 },  // part 2, offset 3.5, note D2
+{ 33, 4, 0 },  // part 2, offset 3.5, note C1
+{ 73, 4, 0 },  // part 2, offset 3.5, note D2
+{ 33, 4, 0 },  // part 2, offset 3.5, note C1
+{ 65, 4, 0 },  // part 2, offset 3.5, note C2
+{ 37, 4, 0 },  // part 2, offset 3.5, note D1
+{ 82, 4, 0 },  // part 2, offset 3.5, note E2
+{ 37, 4, 0 },  // part 2, offset 3.5, note D1
+{ 73, 4, 0 },  // part 2, offset 3.5, note D2
+{ 41, 4, 0 },  // part 2, offset 3.5, note E1
+{ 82, 4, 0 },  // part 2, offset 3.5, note E2
+{ 37, 4, 0 },  // part 2, offset 3.5, note D1
+{ 73, 4, 0 },  // part 2, offset 3.5, note D2
+{ 41, 4, 0 },  // part 2, offset 3.5, note E1
+{ 73, 4, 0 },  // part 2, offset 3.5, note D2
+{ 65, 4, 0 },  // part 2, offset 11/3, note C2
+{ 131, 4, 0 },  // part 2, offset 11/3, note C3
+{ 73, 4, 0 },  // part 2, offset 11/3, note D2
+{ 73, 4, 0 },  // part 2, offset 11/3, note D2
+{ 41, 4, 0 },  // part 2, offset 11/3, note E1
+{ 82, 4, 0 },  // part 2, offset 11/3, note E2
+{ 185, 16, 0 },  // part 2, offset 3.75, note F#3
+{ 73, 4, 0 },  // part 2, offset 3.75, note D2
+{ 37, 4, 0 },  // part 2, offset 3.75, note D1
+{ 65, 4, 0 },  // part 2, offset 3.75, note C2
+{ 41, 4, 0 },  // part 2, offset 3.75, note E1
+{ 73, 4, 0 },  // part 2, offset 3.75, note D2
+{ 41, 4, 0 },  // part 2, offset 3.75, note E1
+{ 73, 4, 0 },  // part 2, offset 3.75, note D2
+{ 37, 4, 0 },  // part 2, offset 3.75, note D1
+// Measure 1
+// Measure 2
+// Measure 3
+// Measure 4
+// Measure 5
+// Measure 6
+// Measure 7
+// Measure 8
+// Measure 8
+// Measure 9
+// Measure 9
+// Measure 10
+// Measure 10
+// Measure 11
+// Measure 12
+// Measure 11
+// Measure 13
+// Measure 12
+// Measure 14
+// Measure 13
+// Measure 15
+// Measure 14
+// Measure 16
+// Measure 15
+// Measure 17
+// Measure 16
+// Measure 18
+// Measure 17
+// Measure 19
+// Measure 18
+// Measure 20
+// Measure 19
+// Measure 21
+// Measure 20
+// Measure 22
+// Measure 21
+// Measure 23
+// Measure 22
+// Measure 24
+// Measure 23
+// Measure 25
+// Measure 24
+// Measure 26
+// Measure 25
+// Measure 27
+// Measure 26
+// Measure 28
+// Measure 27
+// Measure 29
+// Measure 28
+// Measure 30
+// Measure 29
+// Measure 31
+// Measure 30
+// Measure 32
+// Measure 31
+// Measure 33
+// Measure 32
+// Measure 34
+// Measure 33
+// Measure 35
+// Measure 34
+// Measure 36
+// Measure 35
+// Measure 37
+// Measure 36
+// Measure 38
+// Measure 37
+// Measure 39
+// Measure 38
+// Measure 40
+// Measure 39
+// Measure 41
+// Measure 40
+// Measure 42
+// Measure 41
+// Measure 43
+// Measure 42
+// Measure 44
+// Measure 43
+// Measure 45
+// Measure 44
+// Measure 46
+// Measure 45
+// Measure 47
+// Measure 46
+// Measure 48
+// Measure 47
+// Measure 49
+// Measure 48
+// Measure 50
+// Measure 49
+// Measure 51
+// Measure 50
+// Measure 52
+// Measure 51
+// Measure 53
+// Measure 52
+// Measure 54
+// Measure 53
+// Measure 55
